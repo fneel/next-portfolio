@@ -1,0 +1,29 @@
+import Image from "next/image";
+import Link from "next/link";
+
+export default function MainNav() {
+  return (
+    <div className="w-full flex justify-center shadow-sm">
+      <div className="flex h-md w-7xl my-2 justify-between">
+        <Image
+          className="h-full w-auto"
+          alt=""
+          height={50}
+          width={50}
+          src={"public/next.svg"}
+        ></Image>
+        <ul className="flex min-w-1/3 justify-between">
+          <li className="p-4">
+            <Link href="/">work</Link>
+          </li>
+          <li className="p-4">
+            <Link href="/about">about</Link>
+          </li>
+          <li className="p-4">
+            <Link href="/contact">contact</Link>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+}
