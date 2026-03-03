@@ -10,7 +10,7 @@ export default function MainNav() {
           alt=""
           height={50}
           width={50}
-          src={"public/next.svg"}
+          src="/el-in.png"
         ></Image>
         <ul className="flex min-w-1/3 justify-between">
           <li className="p-4">

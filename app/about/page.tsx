@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div className="max-w-7xl mx-auto flex  flex-col gap-20">
-      <div className="flex max-w-7xl gap-10 justify-center">
+    <div className="mx-auto w-full flex flex-col gap-20">
+      <div className="flex justify-between">
         <section className="flex basis-4/10 flex-col gap-12 justify-end p-6 ">
           <div>
             <h1 className="text-8xl uppercase">
