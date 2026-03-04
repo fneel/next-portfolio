@@ -1,0 +1,30 @@
+[
+  {
+    "id": "ai-coach",
+    "title": "AI-Coach",
+    "myRole": "Product Designer & Developer",
+    "projectConcept": "An AI-powered assistant helping entrepreneurs prepare for public procurement.",
+    "backstoryProblem": "Small businesses struggle to understand procurement processes and compliance requirements.",
+    "requirements": "Generate documents, provide regulatory guidance, suggest certifications.",
+    "toolsEnvironments": "Next.js, TypeScript, Tailwind, OpenAI API",
+    "currentSolution": "Interactive AI assistant with guided document generation.",
+    "wireframesSketches": "Low-fidelity Figma wireframes focusing on onboarding and dashboard.",
+    "challenges": "Translating complex procurement laws into actionable AI prompts.",
+    "results": "Improved clarity and reduced preparation time for early testers.",
+    "reflections": "Would introduce better onboarding and clearer compliance validation logic."
+  },
+  {
+    "id": "healthtech-accelerator",
+    "title": "HealthTech Accelerator",
+    "myRole": "UX Designer & Content Strategist",
+    "projectConcept": "Digital platform for Nordic-Baltic health tech startups.",
+    "backstoryProblem": "Startups lacked a centralized collaboration and knowledge hub.",
+    "requirements": "Content structure, startup profiles, event communication.",
+    "toolsEnvironments": "Next.js, Tailwind, CMS integration",
+    "currentSolution": "Landing page and structured accelerator presentation.",
+    "wireframesSketches": "Component-based layout system for scalability.",
+    "challenges": "Balancing investor messaging with startup storytelling.",
+    "results": "Clearer positioning and improved stakeholder communication.",
+    "reflections": "Next step would be deeper CMS integration."
+  }
+]
