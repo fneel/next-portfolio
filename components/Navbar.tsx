@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function MainNav() {
   return (
     <div className="w-full flex justify-center shadow-sm">
-      <div className="flex h-md w-6xl my-2 justify-between">
+      <div className="flex h-md container my-2 justify-between">
         <Link href="/">
           {" "}
           <Image

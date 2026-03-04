@@ -5,7 +5,7 @@ export default function CardGrid() {
   const projects = getProjects();
 
   return (
-    <div className="grid w-full gap-12">
+    <div className="grid w-full gap-24">
       {projects.map((project, index) => (
         <ProjectCard
           key={project.id}

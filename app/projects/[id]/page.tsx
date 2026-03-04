@@ -26,19 +26,22 @@ export default async function ProjectPage({ params }: PageProps) {
 
   return (
     <div className="w-full ">
-      <header className="bg-zinc-800 text-zinc-300 h-100 grid w-full items-end px-2 mx-0">
-        <div>
-          <h1 className="uppercase text-6xl font-normal mb-4">
-            <span className="text-neutral-400 text-6xl">project</span> <br></br>
-            {project.title}
-          </h1>
+      <header className="bg-zinc-800 text-zinc-300 h-100 w-full px-2 mx-0">
+        <div className="container flex flex-col items-start justify-end space-y-16 h-full mx-auto">
+          <div>
+            <h1 className="uppercase text-6xl font-normal mb-4">
+              <span className="text-neutral-400 text-6xl">project</span>{" "}
+              <br></br>
+              {project.title}
+            </h1>
 
-          <p className="text-2xl font-normal">{project.subTitle}</p>
+            <p className="text-2xl font-normal">{project.subTitle}</p>
+          </div>
+          <p className="text-neutral-400 mb-8">{project.myRole}</p>
         </div>
-        <p className="text-neutral-400 mb-8">{project.myRole}</p>
       </header>
 
-      <main className="max-w-6xl py-16">
+      <main className="mx-auto container py-16">
         <section className="mx-auto space-y-12 grid gap-8 text-gray-700">
           <div className="grid gap-8 border-l-2 px-4">
             <h2 className="lg:max-w-1/4 text-5xl font-semibold lowercase py-2">
