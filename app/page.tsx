@@ -4,8 +4,8 @@ import CardGrid from "@/components/CardGrid";
 
 export default function Home() {
   return (
-    <div>
-      <div className="flex gap-10 justify-between w-full">
+    <div className="w-full">
+      <header className="flex gap-10 justify-between w-full">
         <section className="flex basis-4/10 flex-col p-6 ">
           <div>
             <h1 className="text-8xl">
@@ -41,8 +41,9 @@ export default function Home() {
           width={300}
           height={250}
         ></Image>
-      </div>
-      <main className=" mx-auto w-full px-6 py-16">
+      </header>
+
+      <main className=" mx-auto container px-6 py-16">
         <h1 className="text-3xl font-bold mb-8">My Projects</h1>
 
         <CardGrid />

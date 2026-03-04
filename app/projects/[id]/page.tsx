@@ -16,7 +16,7 @@ export function generateStaticParams() {
 }
 
 export default async function ProjectPage({ params }: PageProps) {
-  const { id } = await params; // 👈 detta är fixen
+  const { id } = await params;
 
   const project = getProjectById(id);
 
@@ -25,8 +25,8 @@ export default async function ProjectPage({ params }: PageProps) {
   }
 
   return (
-    <div className="w-full grid justify-center space-y-12">
-      <header className="bg-zinc-800 text-zinc-300 h-100 grid items-end px-2 mx-0">
+    <div className="w-full ">
+      <header className="bg-zinc-800 text-zinc-300 h-100 grid w-full items-end px-2 mx-0">
         <div>
           <h1 className="uppercase text-6xl font-normal mb-4">
             <span className="text-neutral-400 text-6xl">project</span> <br></br>
@@ -38,8 +38,8 @@ export default async function ProjectPage({ params }: PageProps) {
         <p className="text-neutral-400 mb-8">{project.myRole}</p>
       </header>
 
-      <main className="w-full mx-auto py-16">
-        <section className="space-y-12 grid gap-8 text-gray-700">
+      <main className="max-w-6xl py-16">
+        <section className="mx-auto space-y-12 grid gap-8 text-gray-700">
           <div className="grid gap-8 border-l-2 px-4">
             <h2 className="lg:max-w-1/4 text-5xl font-semibold lowercase py-2">
               Project concept
