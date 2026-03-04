@@ -4,7 +4,7 @@ import { Mail, Phone } from "lucide-react";
 
 export default function Contact() {
   return (
-    <div className="w-full flex justify-center min-h-175">
+    <div className="w-full flex justify-center min-h-200">
       <section className="flex gap-12 h-full w-full container justify-center flex-col p-6 ">
         <div>
           <h1 className="text-8xl uppercase">contact</h1>

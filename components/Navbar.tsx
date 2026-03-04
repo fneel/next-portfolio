@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function MainNav() {
   return (
-    <nav className="sticky h-15 top-0 left-0 z-50 w-full flex justify-center shadow-sm bg-zinc-200">
+    <nav className="sticky h-15 top-0 left-0 z-50 w-full flex justify-center shadow-sm bg-mist-100">
       <div className="flex container items-center my-2 justify-between">
         <Link href="/">
           {" "}

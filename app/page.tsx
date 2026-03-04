@@ -39,7 +39,7 @@ export default function Home() {
       </header>
 
       <main className="my-16 mx-auto container px-6 py-16">
-        <section className="h-100"></section>
+        <section className="h-50"></section>
         <section id="projects">
           <div className="h-80 flex flex-col justify-center">
             <h1 className="text-6xl font-normal uppercase my-8 ">My Work</h1>
