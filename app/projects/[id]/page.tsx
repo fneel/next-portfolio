@@ -25,37 +25,84 @@ export default async function ProjectPage({ params }: PageProps) {
   }
 
   return (
-    <main className="max-w-3xl mx-auto px-6 py-16">
-      <h1 className="text-3xl font-bold mb-4">{project.title}</h1>
-
-      <p className="text-gray-500 mb-8">{project.myRole}</p>
-
-      <section className="space-y-6 text-gray-700">
+    <div className="w-full grid justify-center space-y-12">
+      <header className="bg-zinc-800 text-zinc-300 h-100 grid items-end px-2 mx-0">
         <div>
-          <h2 className="font-semibold">Concept</h2>
-          <p>{project.projectConcept}</p>
-        </div>
+          <h1 className="uppercase text-6xl font-normal mb-4">
+            <span className="text-neutral-400 text-6xl">project</span> <br></br>
+            {project.title}
+          </h1>
 
-        <div>
-          <h2 className="font-semibold">Problem</h2>
-          <p>{project.backstoryProblem}</p>
+          <p className="text-2xl font-normal">{project.subTitle}</p>
         </div>
+        <p className="text-neutral-400 mb-8">{project.myRole}</p>
+      </header>
 
-        <div>
-          <h2 className="font-semibold">Solution</h2>
-          <p>{project.currentSolution}</p>
-        </div>
+      <main className="w-full mx-auto py-16">
+        <section className="space-y-12 grid gap-8 text-gray-700">
+          <div className="grid gap-8 border-l-2 px-4">
+            <h2 className="lg:max-w-1/4 text-5xl font-semibold lowercase py-2">
+              Project concept
+            </h2>
+            <p className=" columns-1 md:columns-2 lg:columns-3 gap-8 leading-relaxed">
+              {project.projectConcept}
+            </p>
+          </div>
 
-        <div>
-          <h2 className="font-semibold">Results</h2>
-          <p>{project.results}</p>
-        </div>
+          <div className="grid gap-8 border-l-2 px-4">
+            <h2 className="lg:max-w-1/4 text-5xl font-semibold lowercase py-2">
+              backstory & problem
+            </h2>
+            <p className="max-w-1/2 leading-relaxed">
+              {project.backstoryProblem}
+            </p>
+          </div>
 
-        <div>
-          <h2 className="font-semibold">Reflections</h2>
-          <p>{project.reflections}</p>
-        </div>
-      </section>
-    </main>
+          <div className="grid gap-8 border-l-2 px-4">
+            <h2 className="lg:max-w-1/4 text-5xl font-semibold lowercase py-2">
+              current Solution
+            </h2>
+            <p>{project.currentSolution}</p>
+          </div>
+
+          <div className="grid gap-8 border-l-2 px-4">
+            <h2 className="lg:max-w-1/4 text-5xl font-semibold lowercase py-2">
+              requirements
+            </h2>
+            <p className="max-w-1/2 leading-relaxed">{project.requirements}</p>
+          </div>
+
+          <div className="grid gap-8 border-l-2 px-4">
+            <h2 className="lg:max-w-1/4 text-5xl font-semibold lowercase py-2">
+              tools & environments
+            </h2>
+            <p className="max-w-1/2 leading-relaxed">
+              {project.toolsEnvironments}
+            </p>
+          </div>
+
+          <div className="grid gap-8 border-l-2 px-4">
+            <h2 className="lg:max-w-1/4 text-5xl font-semibold lowercase py-2">
+              challenges
+            </h2>
+            <p className="max-w-1/2 leading-relaxed">{project.challenges}</p>
+          </div>
+
+          <div className="grid gap-8 border-l-2 px-4">
+            <h2 className="lg:max-w-1/4 text-5xl font-semibold lowercase py-2">
+              Results
+            </h2>
+            <p className="max-w-1/2 leading-relaxed">{project.results}</p>
+          </div>
+
+          <div className="grid gap-8 border-l-2 px-4">
+            <h2 className="lg:max-w-1/4 text-5xl font-semibold lowercase py-2">
+              Reflections
+            </h2>
+            <p className="max-w-1/2 leading-relaxed">{project.reflections}</p>
+          </div>
+        </section>
+      </main>
+    </div>
   );
 }
