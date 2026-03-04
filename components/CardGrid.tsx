@@ -5,9 +5,13 @@ export default function CardGrid() {
   const projects = getProjects();
 
   return (
-    <div className="grid w-full gap-6 sm:grid-cols-1 lg:grid-cols-1">
-      {projects.map((project) => (
-        <ProjectCard key={project.title} project={project} />
+    <div className="grid w-full gap-12">
+      {projects.map((project, index) => (
+        <ProjectCard
+          key={project.id}
+          project={project}
+          reversed={index % 2 !== 0} //every second object will display as reversed
+        />
       ))}
     </div>
   );

@@ -4,27 +4,50 @@ import Image from "next/image";
 
 interface ProjectCardProps {
   project: Project;
+  reversed?: boolean;
 }
 
-export default function ProjectCard({ project }: ProjectCardProps) {
+export default function ProjectCard({
+  project,
+  reversed = false, //false by default, the logic in CardGrid determines which ones will be reversed
+}: ProjectCardProps) {
   return (
     <Link href={`/projects/${project.id}`}>
-      <div className="flex justify-between items-center bg-none w-full shadow-md rounded-xl p-6 hover:shadow-xl transition cursor-pointer">
-        <div className="p-6 basis-1/2">
-          <h2 className="text-xl font-semibold mb-2">{project.title}</h2>
+      <div
+        className={`
+          flex items-end w-full rounded-xl p-6 
+          hover:shadow-xl transition cursor-pointer
+          ${reversed ? "flex-row-reverse" : "flex-row"}
+        `}
+      >
+        <div className="px-4 basis-1/2 gap-8 flex flex-col">
+          <div className="flex flex-col text-pretty">
+            <h2 className="text-4xl font-normal uppercase mb-2">
+              {project.title}
+            </h2>
 
-          <p className="text-sm text-gray-500 mb-4">{project.myRole}</p>
+            <p className="text-sm text-gray-500 mb-4">{project.myRole}</p>
 
-          <p className="text-gray-700 line-clamp-3">{project.projectConcept}</p>
+            <p className="text-gray-700 line-clamp-3 my-2">
+              {project.projectConcept}
+            </p>
+          </div>
+
+          <button
+            className="bg-neutral-900 text-sm text-white px-8 py-2 rounded-4xl h-fit w-fit"
+            type="button"
+          >
+            See more
+          </button>
         </div>
 
         <Image
-          className="basis-1/2 p-2 pr-0"
+          className="basis-1/2"
           alt=""
-          src={"https://picsum.photos/300/200"}
-          width={300}
-          height={250}
-        ></Image>
+          src="https://picsum.photos/600/400"
+          width={600}
+          height={400}
+        />
       </div>
     </Link>
   );
