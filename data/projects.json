@@ -12,7 +12,9 @@
     "wireframesSketches": "Low-fidelity Figma wireframes focusing on onboarding and dashboard.",
     "challenges": "Lorem Ipsum har ikke alene overlevet fem århundreder, men har også vundet indpas i elektronisk typografi uden væsentlige ændringer. Sætningen blev gjordt kendt i 1960'erne med lanceringen af Letraset-ark, som indeholdt afsnit med Lorem Ipsum, og senere med layoutprogrammer som Aldus PageMaker, som også indeholdt en udgave af Lorem Ipsum.",
     "results": "Improved clarity and reduced preparation time for early testers.",
-    "reflections": "I modsætning til hvad mange tror, er Lorem Ipsum ikke bare tilfældig tekst. Det stammer fra et stykke litteratur på latin fra år 45 f.kr., hvilket gør teksten over 2000 år gammel. Richard McClintock, professor i latin fra Hampden-Sydney universitet i Virginia, undersøgte et af de mindst kendte ord consectetur fra en del af Lorem Ipsum, og fandt frem til dets oprindelse ved at studere brugen gennem klassisk litteratur. Lorem Ipsum stammer fra afsnittene 1.10.32 og 1.10.33 fra de Finibus Bonorum et Malorum (Det gode og ondes ekstremer), som er skrevet af Cicero i år 45 f.kr. Bogen, som var meget populær i renæssancen, er en afhandling om etik. Den første linie af Lorem Ipsum Lorem ipsum dolor sit amet... kommer fra en linje i afsnit 1.10.32."
+    "reflections": "I modsætning til hvad mange tror, er Lorem Ipsum ikke bare tilfældig tekst. Det stammer fra et stykke litteratur på latin fra år 45 f.kr., hvilket gør teksten over 2000 år gammel. Richard McClintock, professor i latin fra Hampden-Sydney universitet i Virginia, undersøgte et af de mindst kendte ord consectetur fra en del af Lorem Ipsum, og fandt frem til dets oprindelse ved at studere brugen gennem klassisk litteratur. Lorem Ipsum stammer fra afsnittene 1.10.32 og 1.10.33 fra de Finibus Bonorum et Malorum (Det gode og ondes ekstremer), som er skrevet af Cicero i år 45 f.kr. Bogen, som var meget populær i renæssancen, er en afhandling om etik. Den første linie af Lorem Ipsum Lorem ipsum dolor sit amet... kommer fra en linje i afsnit 1.10.32.",
+
+    "tags": ["UX", "Design", "Frontend"]
   },
   {
     "id": "healthtech-accelerator",
@@ -26,6 +28,8 @@
     "wireframesSketches": "Component-based layout system for scalability.",
     "challenges": "Balancing investor messaging with startup storytelling.",
     "results": "Clearer positioning and improved stakeholder communication.",
-    "reflections": "Next step would be deeper CMS integration."
+    "reflections": "Next step would be deeper CMS integration.",
+
+    "tags": ["UX", "Design"]
   }
 ]

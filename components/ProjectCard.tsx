@@ -15,13 +15,23 @@ export default function ProjectCard({
     <Link href={`/projects/${project.id}`}>
       <div
         className={`
-          flex items-end w-full rounded-xl p-6 
+          flex items-center gap-6 w-full rounded-xl p-6 
           hover:shadow-xl transition cursor-pointer
           ${reversed ? "flex-row-reverse" : "flex-row"}
         `}
       >
         <div className="px-4 basis-1/2 gap-8 flex flex-col">
-          <div className="flex flex-col text-pretty">
+          <div className="flex flex-wrap gap-2 top-0  self-start">
+            {project.tags.map((tag) => (
+              <span
+                key={tag}
+                className="text-xs border border-zinc-300 px-3 py-1 rounded-full [font-variant:all-small-caps]"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+          <div className="flex flex-col text-balance">
             <h2 className="text-4xl font-normal uppercase mb-2">
               {project.title}
             </h2>

@@ -1,3 +1,5 @@
+import { ProjectTag } from "./tags";
+
 export interface Project {
   id: string;
   title: string;
@@ -12,4 +14,6 @@ export interface Project {
   challenges: string;
   results: string;
   reflections: string;
+
+  tags: ProjectTag[];
 }

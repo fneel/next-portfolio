@@ -1,4 +1,4 @@
-import { getProjects } from "@/data/projects";
+import { getProjects } from "@/data/getProjects";
 import ProjectCard from "./ProjectCard";
 
 export default function CardGrid() {
