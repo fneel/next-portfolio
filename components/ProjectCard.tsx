@@ -15,7 +15,7 @@ export default function ProjectCard({
     <Link href={`/projects/${project.id}`}>
       <div
         className={`
-          flex items-center gap-6 w-full rounded-xl p-6 
+          flex items-center gap-6 w-full h-xl rounded-xl p-6 
           hover:shadow-xl transition cursor-pointer
           ${reversed ? "flex-row-reverse" : "flex-row"}
         `}
@@ -51,13 +51,15 @@ export default function ProjectCard({
           </button>
         </div>
 
-        <Image
-          className="basis-1/2"
-          alt=""
-          src="https://picsum.photos/600/400"
-          width={600}
-          height={400}
-        />
+        <div>
+          <Image
+            className="basis-1/2 rounded-lg object-contain max-h-100"
+            alt={project.title}
+            src={project.coverImage || "/el-in.png"}
+            width={600}
+            height={400}
+          />
+        </div>
       </div>
     </Link>
   );
