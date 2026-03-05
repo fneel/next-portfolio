@@ -4,13 +4,14 @@ import FancyButtonVar from "@/components/buttons/fancyButtonVar";
 import ProjectsSection from "@/components/ProjectSection";
 import rawProjects from "@/data/projects.json";
 import { Project } from "@/types/project";
+import Button from "@/components/buttons/button";
 
 const projects = rawProjects as Project[];
 
 export default function Home() {
   return (
     <div className="w-full">
-      <header className="w-full flex justify-center shadow">
+      <header className="w-full py-15 flex justify-center shadow">
         <div className="flex gap-10 justify-between container">
           <section className="flex basis-4/10 flex-col justify-end p-6 ">
             <div>
@@ -40,7 +41,24 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="my-16 mx-auto container px-6 py-16">
+      <section className="flex py-12 flex-col my-8 w-full  gap-6  justify-center items-center shadow">
+        <div className="flex flex-col gap-8 w-2xl container text-pretty justify-center p-12 rounded-lg ">
+          <h2 className="text-6xl w-fit bg-[#d2ff1fc4] shadow-[-20px_-20px_60px_32px_rgba(210,_255,_31,_1)]">
+            Hi
+          </h2>
+          <p className="text-lg font-normal py-2 mb-4">
+            Praesent hendrerit at mauris at cursus. Morbi sodales nunc molestie
+            magna scelerisque, et mattis mi hendrerit. Nunc eu augue quis sem
+            tempor pellentesque. Nam accumsan magna id facilisis ultricies.
+            Donec mattis sem urna, eget vehicula diam malesuada nec.{" "}
+          </p>
+
+          <Button variant="primary" href="/about">
+            About me
+          </Button>
+        </div>
+      </section>
+      <main className="my-8 mx-auto container px-6 py-8">
         <section id="projects">
           <div className="h-80 flex flex-col justify-center">
             <h1 className="text-6xl font-normal uppercase my-8 ">My Work</h1>

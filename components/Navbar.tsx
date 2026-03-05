@@ -17,7 +17,7 @@ export default function MainNav() {
         </Link>
         <ul className="flex min-w-1/3 justify-between [font-variant:small-caps] ">
           <li className="p-4">
-            <Link href="/">work</Link>
+            <Link href="/#projects">work</Link>
           </li>
           <li className="p-4">
             <Link href="/about">about</Link>
