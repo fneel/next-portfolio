@@ -1,10 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
+import Button from "@/components/buttons/button";
+import FancyButton from "@/components/buttons/fancyButton";
 
 export default function About() {
   return (
     <div className="w-full flex flex-col items-center gap-20">
-      <header className="flex w-full justify-center shadow">
+      <header className="flex w-full pb-10 justify-center shadow">
         <div className="flex justify-between gap-10 container">
           <section className="flex basis-4/10 flex-col gap-12 justify-end p-6 ">
             <div>
@@ -14,12 +16,7 @@ export default function About() {
               </h1>
             </div>
 
-            <button
-              className="bg-black text-white w-fit px-6 py-2 rounded-4xl"
-              type="button"
-            >
-              <Link href="/#projects">go to resume</Link>
-            </button>
+            <FancyButton href="/#projects">My work</FancyButton>
           </section>
 
           <Image

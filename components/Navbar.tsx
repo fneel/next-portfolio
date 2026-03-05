@@ -15,7 +15,7 @@ export default function MainNav() {
             src="/el-in.png"
           ></Image>
         </Link>
-        <ul className="flex min-w-1/3 justify-between">
+        <ul className="flex min-w-1/3 justify-between [font-variant:small-caps] ">
           <li className="p-4">
             <Link href="/">work</Link>
           </li>

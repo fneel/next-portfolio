@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import CardGrid from "@/components/CardGrid";
+import FancyButton from "@/components/buttons/fancyButton";
+import FancyButtonVar from "@/components/buttons/fancyButtonVar";
 
 export default function Home() {
   return (
@@ -18,13 +20,10 @@ export default function Home() {
               </h1>
             </div>
 
-            <div className="flex justify-between mb-0 mt-12">
-              <Link
-                className="bg-zinc-900 w-fit h-fit text-white rounded-4xl py-2 px-10"
-                href="#projects"
-              >
-                projects
-              </Link>
+            <div className="py-6 mb-4 mt-12">
+              <FancyButtonVar glowColor="#d2ff1f" href="/contact">
+                Connect
+              </FancyButtonVar>
             </div>
           </section>
 
@@ -39,7 +38,6 @@ export default function Home() {
       </header>
 
       <main className="my-16 mx-auto container px-6 py-16">
-        <section className="h-50"></section>
         <section id="projects">
           <div className="h-80 flex flex-col justify-center">
             <h1 className="text-6xl font-normal uppercase my-8 ">My Work</h1>

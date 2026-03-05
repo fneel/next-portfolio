@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Mail, Phone } from "lucide-react";
+import GradientBackground from "@/components/GradientSvg";
 
 export default function Contact() {
   return (
     <div className="w-full flex justify-center min-h-200">
-      <section className="flex gap-12 h-full w-full container justify-center flex-col p-6 ">
+      <section className="flex gap-12 h-full w-1/2 justify-center flex-col p-6 ">
         <div>
           <h1 className="text-8xl uppercase">contact</h1>
         </div>
@@ -30,6 +31,9 @@ export default function Contact() {
             ></Image>
           </div>
         </div>
+      </section>
+      <section className="">
+        <GradientBackground className=""></GradientBackground>
       </section>
     </div>
   );
