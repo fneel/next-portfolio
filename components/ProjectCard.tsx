@@ -22,14 +22,17 @@ export default function ProjectCard({
       >
         <div className="px-4 basis-1/2 gap-8 flex flex-col">
           <div className="flex flex-wrap gap-2 top-0  self-start">
-            {project.tags.map((tag) => (
+            {/* {project.tags.map((tag) => (
               <span
                 key={tag}
                 className="text-xs border border-zinc-300 px-3 py-1 rounded-full [font-variant:all-small-caps]"
               >
                 {tag}
               </span>
-            ))}
+            ))} */}
+            <p className="[font-variant:all-small-caps] text-neutral-400 text-sm ">
+              {project.tags.join(" / ")}
+            </p>
           </div>
           <div className="flex flex-col text-balance">
             <h2 className="text-4xl font-normal uppercase mb-2">
@@ -53,9 +56,9 @@ export default function ProjectCard({
 
         <div>
           <Image
-            className="basis-1/2 rounded-lg object-contain max-h-100"
+            className="shadow-[0px_0px_22px_-5px_rgba(0,_0,_0,_0.1)] basis-1/2 rounded-lg object-contain max-h-100"
             alt={project.title}
-            src={project.coverImage || "/el-in.png"}
+            src={project.coverImage || "/ph-cover.png"}
             width={600}
             height={400}
           />

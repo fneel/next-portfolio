@@ -2,10 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function MainNav() {
+  const linkStyle =
+    "hover:shadow-[0_0_25px_10px_rgba(210,_255,_31,_1)] hover:bg-[#d2ff1f] transition-all duration-200";
+
   return (
     <nav className="sticky h-15 top-0 left-0 z-50 w-full flex justify-center shadow-sm bg-mist-100">
       <div className="flex container items-center my-2 justify-between">
-        <Link href="/">
+        <Link href="/" className="bg-[#D2FF1F] rounded-full">
           {" "}
           <Image
             className="h-12 w-auto"
@@ -17,13 +20,19 @@ export default function MainNav() {
         </Link>
         <ul className="flex min-w-1/3 justify-between [font-variant:small-caps] ">
           <li className="p-4">
-            <Link href="/#projects">work</Link>
+            <Link href="/#projects" className={linkStyle}>
+              work
+            </Link>
           </li>
           <li className="p-4">
-            <Link href="/about">about</Link>
+            <Link href="/about" className={linkStyle}>
+              about
+            </Link>
           </li>
           <li className="p-4">
-            <Link href="/contact">contact</Link>
+            <Link href="/contact" className={linkStyle}>
+              contact
+            </Link>
           </li>
         </ul>
       </div>

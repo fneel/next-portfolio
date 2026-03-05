@@ -12,11 +12,11 @@ export default function About() {
             <div>
               <h1 className="text-8xl uppercase">
                 <span className="text-4xl">about</span>
-                <br></br> name lastname
+                <br></br> elin eurenius
               </h1>
             </div>
 
-            <FancyButton href="/#projects">My work</FancyButton>
+            <FancyButton href="/contact">Connect</FancyButton>
           </section>
 
           <Image

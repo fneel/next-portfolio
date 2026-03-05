@@ -27,23 +27,37 @@ export default async function ProjectPage({ params }: PageProps) {
 
   return (
     <div className="w-full ">
-      <header className="bg-zinc-800 text-zinc-300 h-100 w-full px-2 mx-0">
-        <div className="container flex flex-col items-start justify-end space-y-16 h-full mx-auto">
-          <div>
-            <h1 className="uppercase text-6xl font-normal mb-4">
-              <span className="text-neutral-400 text-6xl">project</span>{" "}
-              <br></br>
-              {project.title}
-            </h1>
+      <header className="w-full py-15 flex justify-center shadow">
+        <div className="container grid grid-cols-2 p-4">
+          <div className="container flex flex-col items-start justify-center space-y-16 h-full mx-auto">
+            <div>
+              <p className="[font-variant:all-small-caps] text-neutral-400 text-sm ">
+                {project.tags.join(" | ")}
+              </p>
+              <h1 className="uppercase text-6xl font-normal mb-4">
+                <span className="text-neutral-400 text-6xl">project</span>{" "}
+                <br></br>
+                {project.title}
+              </h1>
 
-            <p className="text-2xl font-normal">{project.subTitle}</p>
+              <p className="text-2xl font-normal">{project.subTitle}</p>
+            </div>
+            <p className="text-neutral-400">My role: {project.myRole}</p>
           </div>
-          <p className="text-neutral-400 mb-8">{project.myRole}</p>
+          <div className="w-full p-4">
+            <Image
+              className="basis-1/2 rounded-lg object-contain max-h-100"
+              alt={project.title}
+              src={project.coverImage || "/ph-cover-img.png"}
+              width={600}
+              height={400}
+            />
+          </div>
         </div>
       </header>
 
-      <main className="mx-auto container py-16">
-        <section className="mx-auto space-y-12 grid gap-8 text-gray-700">
+      <main className="mx-auto container my-16 py-16">
+        <section className="mx-auto space-y-12 grid gap-16 text-gray-700">
           <div className="grid gap-8 border-l-2 px-4">
             <h2 className="lg:max-w-1/4 text-5xl font-semibold lowercase py-2">
               Project concept
@@ -62,7 +76,7 @@ export default async function ProjectPage({ params }: PageProps) {
             </p>
           </div>
 
-          <div className="grid gap-2">
+          <div className="grid gap-8">
             <div className="grid gap-8 border-l-2 px-4">
               <h2 className="lg:max-w-1/4 text-5xl font-semibold lowercase py-2">
                 current Solution
@@ -71,7 +85,7 @@ export default async function ProjectPage({ params }: PageProps) {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-1 md:gap-6 items-center">
-              {project.wireframesSketchesImages?.map((img, i) => (
+              {project.currentSolutionImages?.map((img, i) => (
                 <Image
                   key={i}
                   src={img.src}
@@ -84,7 +98,7 @@ export default async function ProjectPage({ params }: PageProps) {
             </div>
           </div>
 
-          <div className="grid gap-2">
+          <div className="grid gap-8">
             <div className="grid gap-8 border-l-2 px-4">
               <h2 className="lg:max-w-1/2 text-5xl font-semibold lowercase py-2">
                 wireframes & sketches
@@ -129,7 +143,7 @@ export default async function ProjectPage({ params }: PageProps) {
             <p className="max-w-1/2 leading-relaxed">{project.challenges}</p>
           </div>
 
-          <div className="grid gap-2">
+          <div className="grid gap-8">
             <div className="grid gap-8 border-l-2 px-4">
               <h2 className="lg:max-w-1/2 text-5xl font-semibold lowercase py-2">
                 results
