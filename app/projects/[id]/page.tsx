@@ -1,5 +1,6 @@
 import { getProjects, getProjectById } from "@/data/projects";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 
 interface PageProps {
   params: Promise<{
@@ -61,11 +62,48 @@ export default async function ProjectPage({ params }: PageProps) {
             </p>
           </div>
 
-          <div className="grid gap-8 border-l-2 px-4">
-            <h2 className="lg:max-w-1/4 text-5xl font-semibold lowercase py-2">
-              current Solution
-            </h2>
-            <p>{project.currentSolution}</p>
+          <div className="grid gap-2">
+            <div className="grid gap-8 border-l-2 px-4">
+              <h2 className="lg:max-w-1/4 text-5xl font-semibold lowercase py-2">
+                current Solution
+              </h2>
+              <p>{project.currentSolution}</p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-1 md:gap-6 items-center">
+              {project.wireframesSketchesImages?.map((img, i) => (
+                <Image
+                  key={i}
+                  src={img.src}
+                  alt={img.alt || ""}
+                  width={800}
+                  height={600}
+                  className="rounded-md object-cover"
+                />
+              ))}
+            </div>
+          </div>
+
+          <div className="grid gap-2">
+            <div className="grid gap-8 border-l-2 px-4">
+              <h2 className="lg:max-w-1/2 text-5xl font-semibold lowercase py-2">
+                wireframes & sketches
+              </h2>
+              <p>{project.wireframesSketches}</p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-1 md:gap-6 items-center">
+              {project.wireframesSketchesImages?.map((img, i) => (
+                <Image
+                  key={i}
+                  src={img.src}
+                  alt={img.alt || ""}
+                  width={800}
+                  height={600}
+                  className="rounded-md object-cover"
+                />
+              ))}
+            </div>
           </div>
 
           <div className="grid gap-8 border-l-2 px-4">
@@ -91,11 +129,26 @@ export default async function ProjectPage({ params }: PageProps) {
             <p className="max-w-1/2 leading-relaxed">{project.challenges}</p>
           </div>
 
-          <div className="grid gap-8 border-l-2 px-4">
-            <h2 className="lg:max-w-1/4 text-5xl font-semibold lowercase py-2">
-              Results
-            </h2>
-            <p className="max-w-1/2 leading-relaxed">{project.results}</p>
+          <div className="grid gap-2">
+            <div className="grid gap-8 border-l-2 px-4">
+              <h2 className="lg:max-w-1/2 text-5xl font-semibold lowercase py-2">
+                results
+              </h2>
+              <p>{project.results}</p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-1 md:gap-6 items-center">
+              {project.resultsImages?.map((img, i) => (
+                <Image
+                  key={i}
+                  src={img.src}
+                  alt={img.alt || ""}
+                  width={800}
+                  height={600}
+                  className="rounded-md object-cover"
+                />
+              ))}
+            </div>
           </div>
 
           <div className="grid gap-8 border-l-2 px-4">
