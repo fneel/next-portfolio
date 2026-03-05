@@ -15,5 +15,5 @@ export interface Project {
   results: string;
   reflections: string;
 
-  tags: ProjectTag[];
+  tags: string[];
 }

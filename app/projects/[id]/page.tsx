@@ -1,4 +1,4 @@
-import { getProjects, getProjectById } from "@/data/getProjects";
+import { getProjects, getProjectById } from "@/data/projects";
 import { notFound } from "next/navigation";
 
 interface PageProps {

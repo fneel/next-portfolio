@@ -1,8 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import CardGrid from "@/components/CardGrid";
-import FancyButton from "@/components/buttons/fancyButton";
 import FancyButtonVar from "@/components/buttons/fancyButtonVar";
+import ProjectsSection from "@/components/ProjectSection";
+import rawProjects from "@/data/projects.json";
+import { Project } from "@/types/project";
+
+const projects = rawProjects as Project[];
 
 export default function Home() {
   return (
@@ -47,7 +50,7 @@ export default function Home() {
           </div>
         </section>
 
-        <CardGrid />
+        <ProjectsSection projects={projects} />
       </main>
     </div>
   );
