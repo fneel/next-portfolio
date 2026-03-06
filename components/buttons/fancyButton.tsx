@@ -1,6 +1,15 @@
 import Link from "next/link";
+import { ReactNode } from "react";
 
-export default function FancyButton({ href = "/", children }) {
+interface FancyButtonProps {
+  href?: string;
+  children?: ReactNode;
+}
+
+export default function FancyButton({
+  href = "/",
+  children,
+}: FancyButtonProps) {
   return (
     <div className="relative w-[160px] h-[50px] flex justify-center items-center group">
       {/* Bottom glow */}
