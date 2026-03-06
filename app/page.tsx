@@ -62,9 +62,7 @@ export default function Home() {
         <section id="projects">
           <div className="h-80 flex flex-col justify-center">
             <h1 className="text-6xl font-normal uppercase my-8">My Work</h1>
-            <p className="text-lg">
-              Have a look at some of the projects i have been working with
-            </p>
+            <p className="text-lg">Have a look at some of my work</p>
           </div>
         </section>
 

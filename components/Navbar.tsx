@@ -20,6 +20,11 @@ export default function MainNav() {
         </Link>
         <ul className="flex min-w-1/3 justify-between [font-variant:small-caps] ">
           <li className="p-4">
+            <Link href="/" className={linkStyle}>
+              home
+            </Link>
+          </li>
+          <li className="p-4">
             <Link href="/#projects" className={linkStyle}>
               work
             </Link>
