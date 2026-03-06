@@ -1,10 +1,17 @@
 import Link from "next/link";
+import { ReactNode } from "react";
+
+interface FancyButtonVarProps {
+  href?: string;
+  children?: ReactNode;
+  glowColor?: string;
+}
 
 export default function FancyButtonVar({
   href = "/",
   children,
   glowColor = "#d2ff1f",
-}) {
+}: FancyButtonVarProps) {
   const glowStyle = {
     background: glowColor,
     boxShadow: `
