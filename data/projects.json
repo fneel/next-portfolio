@@ -1,0 +1,106 @@
+[
+  {
+    "id": "ai-coach",
+    "title": "AI-Coach",
+    "myRole": "Product Designer & Developer",
+    "subTitle": "An amazing AI-solution to a difficult problem",
+    "projectConcept": "Der er mange tilgængelige udgaver af Lorem Ipsum, men de fleste udgaver har gennemgået forandringer, når nogen har tilføjet humor eller tilfældige ord, som på ingen måde ser ægte ud. Hvis du skal bruge en udgave af Lorem Ipsum, skal du sikre dig, at der ikke indgår noget pinligt midt i teksten. Alle Lorem Ipsum-generatore på nettet har en tendens til kun at dublere små brudstykker af Lorem Ipsum efter behov, hvilket gør dette til den første ægte generator på internettet. Den bruger en ordbog på over 200 ord på latin kombineret med en håndfuld sætningsstrukturer til at generere sætninger, som ser pålidelige ud. Resultatet af Lorem Ipsum er derfor altid fri for gentagelser, tilføjet humor eller utroværdige ord osv.",
+    "backstoryProblem": "Standardafsnittet af Lorem Ipsum, som er brugt siden 1500-tallet, er gengivet nedenfor for de, der er interesserede. Afsnittene 1.10.32 og 1.10.33 fra de Finibus Bonorum et Malorum af Cicero er også gengivet i deres nøjagtige udgave i selskab med den engelske udgave fra oversættelsen af H. Rackham fra 1914.",
+    "requirements": "Generate documents, provide regulatory guidance, suggest certifications.",
+    "toolsEnvironments": "Next.js, TypeScript, Tailwind, OpenAI API",
+    "currentSolution": "Interactive AI assistant with guided document generation.",
+    "currentSolutionImages": [
+      {
+        "src": "/projects/project-1/Landingpage.png",
+        "alt": "DWV landingpage"
+      },
+      {
+        "src": "/projects/project-1/what-we-offer.png"
+      }
+    ],
+    "wireframesSketches": "Low-fidelity Figma wireframes focusing on onboarding and dashboard.",
+    "wireframesSketchesImages": [
+      {
+        "src": "/projects/project-1/Landingpage.png",
+        "alt": "DWV landingpage"
+      },
+      {
+        "src": "/projects/project-1/what-we-offer.png",
+        "alt": "displaying the company offers"
+      },
+      {
+        "src": "/projects/project-1/what-we-offer.png",
+        "alt": "displaying the company offers"
+      }
+    ],
+    "challenges": "Lorem Ipsum har ikke alene overlevet fem århundreder, men har også vundet indpas i elektronisk typografi uden væsentlige ændringer. Sætningen blev gjordt kendt i 1960'erne med lanceringen af Letraset-ark, som indeholdt afsnit med Lorem Ipsum, og senere med layoutprogrammer som Aldus PageMaker, som også indeholdt en udgave af Lorem Ipsum.",
+    "results": "Improved clarity and reduced preparation time for early testers.",
+    "resultsImages": [
+      {
+        "src": "/projects/project-1/Landingpage.png",
+        "alt": "DWV landingpage"
+      },
+      {
+        "src": "/projects/project-1/what-we-offer.png",
+        "alt": "displaying the company offers"
+      },
+      {
+        "src": "/projects/project-1/what-we-offer.png",
+        "alt": "displaying the company offers"
+      }
+    ],
+    "reflections": "I modsætning til hvad mange tror, er Lorem Ipsum ikke bare tilfældig tekst. Det stammer fra et stykke litteratur på latin fra år 45 f.kr., hvilket gør teksten over 2000 år gammel. Richard McClintock, professor i latin fra Hampden-Sydney universitet i Virginia, undersøgte et af de mindst kendte ord consectetur fra en del af Lorem Ipsum, og fandt frem til dets oprindelse ved at studere brugen gennem klassisk litteratur. Lorem Ipsum stammer fra afsnittene 1.10.32 og 1.10.33 fra de Finibus Bonorum et Malorum (Det gode og ondes ekstremer), som er skrevet af Cicero i år 45 f.kr. Bogen, som var meget populær i renæssancen, er en afhandling om etik. Den første linie af Lorem Ipsum Lorem ipsum dolor sit amet... kommer fra en linje i afsnit 1.10.32.",
+
+    "tags": ["UX", "Design", "Frontend"],
+    "coverImage": "/projects/project-1/Landingpage.png"
+  },
+  {
+    "id": "healthtech-accelerator",
+    "title": "HealthTech Accelerator",
+    "myRole": "UX Designer & Content Strategist",
+    "projectConcept": "Digital platform for Nordic-Baltic health tech startups.",
+    "backstoryProblem": "Startups lacked a centralized collaboration and knowledge hub.",
+    "requirements": "Content structure, startup profiles, event communication.",
+    "toolsEnvironments": "Next.js, Tailwind, CMS integration",
+    "currentSolution": "Landing page and structured accelerator presentation.",
+    "wireframesSketches": "Component-based layout system for scalability.",
+    "challenges": "Balancing investor messaging with startup storytelling.",
+    "results": "Clearer positioning and improved stakeholder communication.",
+    "reflections": "Next step would be deeper CMS integration.",
+
+    "tags": ["UX", "Design"]
+  },
+  {
+    "id": "community-platform",
+    "title": "community platform",
+    "myRole": "Product Designer & Developer",
+    "subTitle": "An amazing solution to a difficult problem",
+    "projectConcept": "Der er mange tilgængelige udgaver af Lorem Ipsum, men de fleste udgaver har gennemgået forandringer, når nogen har tilføjet humor eller tilfældige ord, som på ingen måde ser ægte ud. Hvis du skal bruge en udgave af Lorem Ipsum, skal du sikre dig, at der ikke indgår noget pinligt midt i teksten. Alle Lorem Ipsum-generatore på nettet har en tendens til kun at dublere små brudstykker af Lorem Ipsum efter behov, hvilket gør dette til den første ægte generator på internettet. Den bruger en ordbog på over 200 ord på latin kombineret med en håndfuld sætningsstrukturer til at generere sætninger, som ser pålidelige ud. Resultatet af Lorem Ipsum er derfor altid fri for gentagelser, tilføjet humor eller utroværdige ord osv.",
+    "backstoryProblem": "Standardafsnittet af Lorem Ipsum, som er brugt siden 1500-tallet, er gengivet nedenfor for de, der er interesserede. Afsnittene 1.10.32 og 1.10.33 fra de Finibus Bonorum et Malorum af Cicero er også gengivet i deres nøjagtige udgave i selskab med den engelske udgave fra oversættelsen af H. Rackham fra 1914.",
+    "requirements": "Generate documents, provide regulatory guidance, suggest certifications.",
+    "toolsEnvironments": "Next.js, TypeScript, Tailwind, OpenAI API",
+    "currentSolution": "Interactive AI assistant with guided document generation.",
+    "wireframesSketches": "Low-fidelity Figma wireframes focusing on onboarding and dashboard.",
+    "challenges": "Lorem Ipsum har ikke alene overlevet fem århundreder, men har også vundet indpas i elektronisk typografi uden væsentlige ændringer. Sætningen blev gjordt kendt i 1960'erne med lanceringen af Letraset-ark, som indeholdt afsnit med Lorem Ipsum, og senere med layoutprogrammer som Aldus PageMaker, som også indeholdt en udgave af Lorem Ipsum.",
+    "results": "Improved clarity and reduced preparation time for early testers.",
+    "reflections": "I modsætning til hvad mange tror, er Lorem Ipsum ikke bare tilfældig tekst. Det stammer fra et stykke litteratur på latin fra år 45 f.kr., hvilket gør teksten over 2000 år gammel. Richard McClintock, professor i latin fra Hampden-Sydney universitet i Virginia, undersøgte et af de mindst kendte ord consectetur fra en del af Lorem Ipsum, og fandt frem til dets oprindelse ved at studere brugen gennem klassisk litteratur. Lorem Ipsum stammer fra afsnittene 1.10.32 og 1.10.33 fra de Finibus Bonorum et Malorum (Det gode og ondes ekstremer), som er skrevet af Cicero i år 45 f.kr. Bogen, som var meget populær i renæssancen, er en afhandling om etik. Den første linie af Lorem Ipsum Lorem ipsum dolor sit amet... kommer fra en linje i afsnit 1.10.32.",
+
+    "tags": ["UX", "Design", "Frontend", "Other"]
+  },
+  {
+    "id": "social-media-templates",
+    "title": "social media templates",
+    "myRole": "UX Designer & Content Strategist",
+    "projectConcept": "Digital platform for Nordic-Baltic health tech startups.",
+    "backstoryProblem": "Startups lacked a centralized collaboration and knowledge hub.",
+    "requirements": "Content structure, startup profiles, event communication.",
+    "toolsEnvironments": "Next.js, Tailwind, CMS integration",
+    "currentSolution": "Landing page and structured accelerator presentation.",
+    "wireframesSketches": "Component-based layout system for scalability.",
+    "challenges": "Balancing investor messaging with startup storytelling.",
+    "results": "Clearer positioning and improved stakeholder communication.",
+    "reflections": "Next step would be deeper CMS integration.",
+
+    "tags": ["UX", "Design", "Social Media"]
+  }
+]
