@@ -14,7 +14,7 @@ export default function Contact() {
         <div className="flex flex-col gap-6 w-full">
           <div className="flex flex-row gap-4">
             <Mail />
-            <a href="mailto:emailhej@mailadress.com">mail@mailme.nu</a>
+            <a href="mailto:emailhej@mailadress.com">elineurenius@gmail.com</a>
           </div>
 
           <div className="flex flex-row gap-4">
@@ -22,13 +22,22 @@ export default function Contact() {
             <a href="tel:+46789 45 61 23">+46789 45 61 23</a>
           </div>
           <div className="flex gap-6">
-            <Image src="/InBug-Black.png" height={40} width={40} alt=""></Image>
-            <Image
-              src="/GitHub_Black.png"
-              height={40}
-              width={40}
-              alt=""
-            ></Image>
+            <a href="https://www.linkedin.com/in/elineurenius/">
+              <Image
+                src="/InBug-Black.png"
+                height={40}
+                width={40}
+                alt=""
+              ></Image>
+            </a>
+            <a href="https://github.com/fneel">
+              <Image
+                src="/GitHub_Black.png"
+                height={40}
+                width={40}
+                alt=""
+              ></Image>
+            </a>
           </div>
         </div>
       </section>

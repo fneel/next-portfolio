@@ -8,7 +8,7 @@ export default function MainNav() {
   return (
     <nav className="sticky h-15 top-0 left-0 z-50 w-full flex justify-center shadow-sm bg-mist-100">
       <div className="flex container items-center my-2 justify-between">
-        <Link href="/" className="bg-[#D2FF1F] rounded-full">
+        <Link href="/#home" className="bg-[#D2FF1F] rounded-full">
           {" "}
           <Image
             className="h-12 w-auto"
@@ -20,7 +20,7 @@ export default function MainNav() {
         </Link>
         <ul className="flex min-w-1/3 justify-between [font-variant:small-caps] ">
           <li className="p-4">
-            <Link href="/" className={linkStyle}>
+            <Link href="/#home" className={linkStyle}>
               home
             </Link>
           </li>
