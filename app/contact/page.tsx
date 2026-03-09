@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Mail, Phone } from "lucide-react";
 import GradientBackground from "@/components/GradientSvg";
+import GitHubLink from "@/components/social links/GitHubLink";
 
 export default function Contact() {
   return (
@@ -29,6 +30,7 @@ export default function Contact() {
               width={40}
               alt=""
             ></Image>
+            <GitHubLink />
           </div>
         </div>
       </section>
