@@ -18,7 +18,7 @@ export default function NavbarItem({ href = "/", children }: NavbarItemProps) {
       onClick={() =>
         sendGTMEvent({
           event: "navigation_click",
-          naviagtion: path,
+          navigation: path,
         })
       }
       href={href}
