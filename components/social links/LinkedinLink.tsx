@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import { sendGTMEvent } from "@next/third-parties/google";
 import Image from "next/image";
 
-const GitHubLink = () => {
+const LinkedinLink = () => {
   const path = usePathname();
 
   return (
@@ -15,12 +15,12 @@ const GitHubLink = () => {
           page_location: path,
         })
       }
-      href="https://github.com/fneel"
+      href="https://www.linkedin.com/in/elineurenius/"
       className=""
     >
-      <Image src="/GitHub_Black.png" height={40} width={40} alt=""></Image>
+      <Image src="/InBug-Black.png" height={40} width={40} alt=""></Image>
     </a>
   );
 };
 
-export default GitHubLink;
+export default LinkedinLink;

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Mail, Phone } from "lucide-react";
 import GradientBackground from "@/components/GradientSvg";
 import GitHubLink from "@/components/social links/GitHubLink";
+import LinkedinLink from "@/components/social links/LinkedinLink";
 
 export default function Contact() {
   return (
@@ -15,21 +16,15 @@ export default function Contact() {
         <div className="flex flex-col gap-6 w-full">
           <div className="flex flex-row gap-4">
             <Mail />
-            <a href="mailto:emailhej@mailadress.com">mail@mailme.nu</a>
+            <a href="mailto:emailhej@mailadress.com">elineurenius@gmail.com</a>
           </div>
 
-          <div className="flex flex-row gap-4">
+          {/* <div className="flex flex-row gap-4">
             <Phone />
             <a href="tel:+46789 45 61 23">+46789 45 61 23</a>
-          </div>
+          </div> */}
           <div className="flex gap-6">
-            <Image src="/InBug-Black.png" height={40} width={40} alt=""></Image>
-            <Image
-              src="/GitHub_Black.png"
-              height={40}
-              width={40}
-              alt=""
-            ></Image>
+            <LinkedinLink />
             <GitHubLink />
           </div>
         </div>
