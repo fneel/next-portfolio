@@ -31,7 +31,7 @@ export default function ProjectCard({
               </span>
             ))} */}
             <p className="[font-variant:all-small-caps] text-neutral-400 text-sm ">
-              {project.tags.join(" / ")}
+              {project.tags.join(" | ")}
             </p>
           </div>
           <div className="flex flex-col text-balance">
