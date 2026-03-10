@@ -4,6 +4,9 @@ import "./globals.css";
 import MainNav from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Variable } from "lucide-react";
+import { GoogleTagManager } from "@next/third-parties/google";
+import Analytics from "@/components/Analytics";
+import { Suspense } from "react";
 
 const notoSans = Noto_Sans({
   variable: "--font-noto-sans",
@@ -28,6 +31,10 @@ export default function RootLayout({
         <MainNav />
         <main className="flex mx-auto w-full flex:1">{children}</main>
         <Footer />
+        <GoogleTagManager gtmId="GTM-NMLBWBTQ" />
+        <Suspense>
+          <Analytics />
+        </Suspense>
       </body>
     </html>
   );
