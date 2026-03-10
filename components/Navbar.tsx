@@ -23,7 +23,7 @@ export default function MainNav() {
             <NavbarItem href="/">HEJ</NavbarItem>
           </li>
           <li className="p-4">
-            <Link id="navlink" href="/" className={linkStyle}>
+            <Link id="navlink" href="/#home" className={linkStyle}>
               home
             </Link>
           </li>
