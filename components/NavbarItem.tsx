@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { sendGTMEvent } from "@next/third-parties/google";
-import Link from "next/link";
+
 import { ReactNode } from "react";
 
 interface NavbarItemProps {
@@ -14,7 +14,7 @@ export default function NavbarItem({ href = "/", children }: NavbarItemProps) {
   const path = usePathname();
 
   return (
-    <Link
+    <a
       onClick={() =>
         sendGTMEvent({
           event: "navlink_click",
@@ -22,9 +22,9 @@ export default function NavbarItem({ href = "/", children }: NavbarItemProps) {
         })
       }
       href={href}
-      className=""
+      className="hover:shadow-[0_0_25px_10px_rgba(210,_255,_31,_1)] hover:bg-[#d2ff1f] transition-all duration-200"
     >
       {children}
-    </Link>
+    </a>
   );
 }

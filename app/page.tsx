@@ -52,6 +52,7 @@ export default function Home() {
               width={200}
             ></Image>
           </div>
+
           <div className=" basis-1/2 flex flex-col gap-8 w-2xl container text-pretty justify-center p-12 rounded-lg ">
             <h2 className="text-6xl w-fit mb-8 rounded-full bg-[#d2ff1fc4] shadow-[-20px_-20px_60px_32px_rgba(210,_255,_31,_1)]">
               Hi
@@ -70,14 +71,16 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="projects">
-          <div className="h-80 flex flex-col justify-center">
-            <h1 className="text-6xl font-normal uppercase my-8">My Work</h1>
-            <p className="text-lg">Have a look at some of my work</p>
-          </div>
-        </section>
+        <section id="projects" className="">
+          <section>
+            <div className="h-80 flex flex-col justify-center">
+              <h1 className="text-6xl font-normal uppercase my-8">My Work</h1>
+              <p className="text-lg">Have a look at some of my work</p>
+            </div>
+          </section>
 
-        <ProjectsSection projects={projects} />
+          <ProjectsSection projects={projects} />
+        </section>
       </main>
     </div>
   );
