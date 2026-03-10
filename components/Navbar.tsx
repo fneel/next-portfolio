@@ -20,22 +20,22 @@ export default function MainNav() {
         </Link>
         <ul className="flex min-w-1/3 justify-between [font-variant:small-caps] ">
           <li className="p-4">
-            <Link href="/" className={linkStyle}>
+            <Link id="navlink" href="/" className={linkStyle}>
               home
             </Link>
           </li>
           <li className="p-4">
-            <Link href="/#projects" className={linkStyle}>
+            <Link id="navlink" href="/#projects" className={linkStyle}>
               work
             </Link>
           </li>
           <li className="p-4">
-            <Link href="/about" className={linkStyle}>
+            <Link id="navlink" href="/about" className={linkStyle}>
               about
             </Link>
           </li>
           <li className="p-4">
-            <Link href="/contact" className={linkStyle}>
+            <Link id="navlink" href="/contact" className={linkStyle}>
               contact
             </Link>
           </li>
