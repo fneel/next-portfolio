@@ -10,7 +10,7 @@ const projects = rawProjects as Project[];
 
 export default function Home() {
   return (
-    <div className="w-full" id="home">
+    <div className="w-full grid grid-flow-row auto-rows-max gap-26" id="home">
       <header className="w-full py-15 flex justify-center ">
         <div className="flex gap-10 justify-between container md:w-full sm:w-full">
           <section className="flex basis-3/5 flex-col justify-end p-6 ">
@@ -41,8 +41,8 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="my-8 mx-auto container px-6 py-8">
-        <section className="flex py-12 mx-auto my-8 container items-center  w-full gap-6 justify-center">
+      <main className="mx-auto container px-6 grid grid-flow-row auto-rows-max gap-26 my-12">
+        <section className="flex mx-auto container items-center  w-full gap-6 justify-center">
           <div className="basis-1/2 border border-neutral-300 m-4">
             <Image
               className="w-full h-auto object-cover"
@@ -52,6 +52,7 @@ export default function Home() {
               width={200}
             ></Image>
           </div>
+
           <div className=" basis-1/2 flex flex-col gap-8 w-2xl container text-pretty justify-center p-12 rounded-lg ">
             <h2 className="text-6xl w-fit mb-8 rounded-full bg-[#d2ff1fc4] shadow-[-20px_-20px_60px_32px_rgba(210,_255,_31,_1)]">
               Hi
@@ -70,14 +71,16 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="projects">
-          <div className="h-80 flex flex-col justify-center">
-            <h1 className="text-6xl font-normal uppercase my-8">My Work</h1>
-            <p className="text-lg">Have a look at some of my work</p>
-          </div>
-        </section>
+        <section id="projects" className="my-12">
+          <section>
+            <div className="h-80 flex flex-col justify-center">
+              <h1 className="text-6xl font-normal uppercase my-8">My Work</h1>
+              <p className="text-lg">Have a look at some of my work</p>
+            </div>
+          </section>
 
-        <ProjectsSection projects={projects} />
+          <ProjectsSection projects={projects} />
+        </section>
       </main>
     </div>
   );

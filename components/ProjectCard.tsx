@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Project } from "@/types/project";
 import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 
 interface ProjectCardProps {
   project: Project;
@@ -46,12 +47,10 @@ export default function ProjectCard({
             </p>
           </div>
 
-          <button
-            className="bg-neutral-900 text-sm text-white px-8 py-2 rounded-4xl h-fit w-fit"
-            type="button"
-          >
-            See more
-          </button>
+          <div className="flex flex-row gap-4 items-center">
+            <span className="font-medium text-neutral-600 ">See more</span>
+            <ArrowRight className="text-neutral-600 h-4" />
+          </div>
         </div>
 
         <div>
