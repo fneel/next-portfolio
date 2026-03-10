@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import NavbarItem from "./NavbarItem";
 
 export default function MainNav() {
   const linkStyle =
@@ -19,6 +20,9 @@ export default function MainNav() {
           ></Image>
         </Link>
         <ul className="flex min-w-1/3 justify-between [font-variant:small-caps] ">
+          <li>
+            <NavbarItem href="/">HEJ</NavbarItem>
+          </li>
           <li className="p-4">
             <Link id="navlink" href="/" className={linkStyle}>
               home
