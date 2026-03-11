@@ -11,7 +11,7 @@ const GitHubLink = () => {
     <a
       onClick={() =>
         sendGTMEvent({
-          event: "github_link",
+          event: "social_link",
           page_location: path,
         })
       }
