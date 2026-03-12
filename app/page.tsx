@@ -31,33 +31,44 @@ export default function Home() {
             </div>
           </section>
 
-          <Image
-            className="basis-2/5 object-center p-6 object-cover"
-            alt=""
-            src="/images/e_b_1.jpeg"
-            width={300}
-            height={250}
-          ></Image>
+          <div
+            className="basis-2/5  rounded-4xl backdrop-blur-[15px]
+          bg-white/5
+          border-t border-white/10
+          
+          shadow-[0_15px_15px_rgba(0,0,0,0.3)]
+          overflow-hidden
+          transition-all duration-500
+          group-hover:tracking-[3px]"
+          >
+            <Image
+              className="object-center object-cover w-full h-full"
+              alt=""
+              src="/images/e2.png"
+              width={300}
+              height={300}
+            ></Image>
+          </div>
         </div>
       </header>
 
       <main className="mx-auto container px-6 grid grid-flow-row auto-rows-max gap-26 my-12">
-        <section className="flex mx-auto container items-center  w-full gap-6 justify-center">
-          <div className="basis-1/2 border border-neutral-300 m-4">
+        <section className="flex mx-auto container items-end  w-full h-auto gap-6 justify-center">
+          <div className="basis-1/2 m-4 flex justify-center">
             <Image
-              className="w-full h-auto object-cover"
-              src="/ph-cover.png"
+              className="h-100 w-auto object-cover rounded-xl"
+              src="/images/e3.jpg"
               alt=""
-              height={100}
+              height={200}
               width={200}
             ></Image>
           </div>
 
-          <div className=" basis-1/2 flex flex-col gap-8 w-2xl container text-pretty justify-center p-12 rounded-lg ">
+          <div className=" basis-1/2 flex flex-col gap-8 w-2xl container text-pretty justify-center p-4 rounded-lg ">
             <h2 className="text-6xl w-fit mb-8 rounded-full bg-[#d2ff1fc4] shadow-[-20px_-20px_60px_32px_rgba(210,_255,_31,_1)]">
               Hi
             </h2>
-            <p className="text-lg font-normal py-2 mb-4">
+            <p className="text-lg font-normal py-2">
               Praesent hendrerit at mauris at cursus. Morbi sodales nunc
               molestie magna scelerisque, et mattis mi hendrerit. Nunc eu augue
               quis sem tempor pellentesque. Nam accumsan magna id facilisis
