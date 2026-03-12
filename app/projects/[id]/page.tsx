@@ -1,6 +1,7 @@
 import { getProjects, getProjectById } from "@/data/projects";
 import { notFound } from "next/navigation";
 import Image from "next/image";
+import BackButton from "@/components/buttons/goBackButton";
 
 interface PageProps {
   params: Promise<{
@@ -27,9 +28,10 @@ export default async function ProjectPage({ params }: PageProps) {
 
   return (
     <div className="w-full ">
-      <header className="w-full py-15 flex justify-center shadow">
-        <div className="container grid grid-cols-2 p-4">
-          <div className="container flex flex-col items-start justify-center space-y-16 h-full mx-auto">
+      <header className="w-full py-15 flex flex-col mx-auto justify-center shadow container">
+        <BackButton />
+        <div className="flex items-center content-between p-4">
+          <div className=" flex flex-col items-start justify-center space-y-16 h-full mx-auto">
             <div>
               <p className="[font-variant:all-small-caps] text-neutral-400 text-sm ">
                 {project.tags.join(" | ")}
@@ -45,7 +47,7 @@ export default async function ProjectPage({ params }: PageProps) {
             </div>
             <p className="text-neutral-400">My role: {project.myRole}</p>
           </div>
-          <div className="w-full p-4">
+          <div className=" p-4 mx-auto align-self-center">
             <Image
               className="basis-1/2 rounded-lg object-contain max-h-100"
               alt={project.title}

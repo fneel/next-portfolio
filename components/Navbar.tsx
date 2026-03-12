@@ -4,8 +4,8 @@ import NavbarItem from "./NavbarItem";
 
 export default function MainNav() {
   return (
-    <nav className="sticky h-15 top-0 left-0 z-50 w-full flex justify-center shadow-sm bg-mist-100">
-      <div className="flex container items-center my-2 justify-between">
+    <nav className="sticky h-15 top-0 left-0 z-50 w-full flex justify-center shadow-lg/5 bg-mist-100">
+      <div className="flex mx-4 container items-center my-2 justify-between">
         <Link href="/" className="bg-[#D2FF1F] rounded-full">
           <Image
             className="h-12 w-auto"
