@@ -10,8 +10,8 @@ const projects = rawProjects as Project[];
 
 export default function Home() {
   return (
-    <div className="w-full grid grid-flow-row auto-rows-max gap-26" id="home">
-      <header className="w-full py-15 flex justify-center ">
+    <div className="w-full grid grid-flow-row auto-rows-max gap-36" id="home">
+      <header className="w-full flex justify-center h-full py-20">
         <div className="flex gap-10 justify-between container md:w-full sm:w-full">
           <section className="flex basis-3/5 flex-col justify-end p-6 ">
             <div>
@@ -32,7 +32,7 @@ export default function Home() {
           </section>
 
           <div
-            className="basis-2/5  rounded-4xl backdrop-blur-[15px]
+            className="basis-2/5 max-h-200 rounded-4xl backdrop-blur-[15px]
           bg-white/5
           border-t border-white/10
           
@@ -53,7 +53,7 @@ export default function Home() {
       </header>
 
       <main className="mx-auto container px-6 grid grid-flow-row auto-rows-max gap-26 my-12">
-        <section className="flex mx-auto container items-end  w-full h-auto gap-6 justify-center">
+        <section className="flex container items-end  w-full h-auto gap-6 ">
           <div className="basis-1/2 m-4 flex justify-center">
             <Image
               className="h-100 w-auto object-cover rounded-xl"

@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${notoSans.variable} flex flex-col min-h-screen bg-mist-100`}
+        className={`${notoSans.variable} justify-between flex flex-col min-h-screen bg-mist-100`}
       >
         <MainNav />
         <main className="flex mx-auto w-full flex:1">{children}</main>

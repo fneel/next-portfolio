@@ -7,7 +7,7 @@ import LinkedinLink from "@/components/social links/LinkedinLink";
 
 export default function Contact() {
   return (
-    <div className="w-full flex flex-col items-center">
+    <div className="w-full flex flex-col items-center min-h-200">
       <main className="container mb-16">
         <div className="flex flex-row container justify-between mx-auto">
           <section className="flex gap-12 justify-center flex-col p-6 ">
