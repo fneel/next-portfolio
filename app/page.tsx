@@ -92,8 +92,8 @@ export default function Home() {
 
         <section id="projects" className="my-12 container mx-auto p-6">
           <section>
-            <div className="h-80 flex flex-col justify-center">
-              <h1 className="text-8xl font-normal uppercase my-8">
+            <div className="my-8 flex flex-col justify-center">
+              <h1 className="text-6xl font-normal uppercase mb-2">
                 My <i>Work</i>
               </h1>
               <p className="text-lg"></p>

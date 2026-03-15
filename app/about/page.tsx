@@ -1,7 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import Button from "@/components/buttons/button";
-import FancyButton from "@/components/buttons/fancyButton";
 import FancyButtonVar from "@/components/buttons/fancyButtonVar";
 
 export default function About() {
@@ -35,7 +33,7 @@ export default function About() {
       </header>
 
       <main className="container w-full mb-16 mx-auto">
-        <section className="grid gap-60 w-fit p-6 mx-auto container">
+        <section className="grid gap-40 p-6 container mx-auto">
           <section className="grid gap-6 w-fit">
             <h2 className="text-6xl">Intro</h2>
             <p className="leading-7 max-w-155 text-pretty">
@@ -197,8 +195,8 @@ export default function About() {
             <h2 className="text-6xl">
               <i>How</i> I do it
             </h2>
-            <ul className="grid grid-flow-col grid-rows-3 gap-8 w-full text-foreground/50">
-              <li className="w-xl text-balance grid gap-4">
+            <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 w-full text-foreground/50">
+              <li className="text-balance grid gap-4">
                 <h3 className="text-2xl text-foreground">
                   1. Förstå problemet
                 </h3>
@@ -208,7 +206,7 @@ export default function About() {
                   dialog med beställare.
                 </p>
               </li>
-              <li className="w-xl text-balance grid gap-4">
+              <li className="text-balance grid gap-4">
                 <h3 className="text-2xl text-foreground">
                   2. Struktur och koncept
                 </h3>
@@ -217,7 +215,7 @@ export default function About() {
                   koncept för att definiera hur lösningen ska fungera.
                 </p>
               </li>
-              <li className="w-xl text-balance grid gap-4">
+              <li className="text-balance grid gap-4">
                 <h3 className="text-2xl text-foreground">
                   3. Design och prototyp
                 </h3>
@@ -226,7 +224,7 @@ export default function About() {
                   wireframes, prototyper och visuella gränssnitt.
                 </p>
               </li>
-              <li className="w-xl text-balance grid gap-4">
+              <li className="text-balance grid gap-4">
                 <h3 className="text-2xl text-foreground">
                   4. Utveckling och implementering
                 </h3>
@@ -235,7 +233,7 @@ export default function About() {
                   ligger på prestanda, tillgänglighet och responsiv design.
                 </p>
               </li>
-              <li className="w-xl text-balance grid gap-4">
+              <li className="text-balance grid gap-4">
                 <h3 className="text-2xl text-foreground">
                   5. Test och förbättring
                 </h3>
