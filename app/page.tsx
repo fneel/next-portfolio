@@ -10,72 +10,93 @@ const projects = rawProjects as Project[];
 
 export default function Home() {
   return (
-    <div className="w-full grid grid-flow-row auto-rows-max gap-26" id="home">
-      <header className="w-full py-15 flex justify-center ">
+    <div className="w-full grid grid-flow-row auto-rows-max gap-36" id="home">
+      <header className="w-full flex justify-center h-full py-20">
         <div className="flex gap-10 justify-between container md:w-full sm:w-full">
-          <section className="flex basis-3/5 flex-col justify-end p-6 ">
+          <section className="flex basis-1/2 flex-col justify-end p-6 ">
             <div>
               <h1 className="text-8xl uppercase">
                 <span className="text-xl">
-                  portfolio:
-                  <b> elin eurenius</b>
+                  <b>portfolio:</b>
+
+                  <i> elin eurenius</i>
                 </span>
-                <br></br> ux & web designer
+                <br></br>ux & web designer
               </h1>
             </div>
 
             <div className="py-6 mb-4 mt-12">
-              <FancyButtonVar glowColor="#d2ff1f" href="/contact">
-                Connect
+              <FancyButtonVar
+                glowColor="#9cb0ff"
+                textMode="dark"
+                href="#projects"
+              >
+                My work
               </FancyButtonVar>
             </div>
           </section>
 
-          <Image
-            className="basis-2/5 object-center p-6 object-cover"
-            alt=""
-            src="/images/e_b_1.jpeg"
-            width={300}
-            height={250}
-          ></Image>
+          {/* <div
+            className="basis-2/5 max-h-200 rounded-4xl backdrop-blur-[15px]
+          bg-black/5
+          border-t border-white/10
+          
+          shadow-[0_15px_15px_rgba(0,0,0,0.3)]
+          overflow-hidden
+          transition-all duration-500
+          group-hover:tracking-[3px]"
+          >
+            <Image
+              className="object-center object-cover w-full h-full"
+              alt=""
+              src="/images/e2.png"
+              width={300}
+              height={300}
+            ></Image>
+          </div> */}
+
+          <div className="basis-1/2 max-h-200 p-6">
+            <Image
+              className="object-center object-cover w-full h-full md:p-8"
+              alt=""
+              src="/images/grid-h.png"
+              width={800}
+              height={1200}
+            ></Image>
+          </div>
         </div>
       </header>
 
-      <main className="mx-auto container px-6 grid grid-flow-row auto-rows-max gap-26 my-12">
-        <section className="flex mx-auto container items-center  w-full gap-6 justify-center">
-          <div className="basis-1/2 border border-neutral-300 m-4">
-            <Image
-              className="w-full h-auto object-cover"
-              src="/ph-cover.png"
-              alt=""
-              height={100}
-              width={200}
-            ></Image>
-          </div>
-
-          <div className=" basis-1/2 flex flex-col gap-8 w-2xl container text-pretty justify-center p-12 rounded-lg ">
-            <h2 className="text-6xl w-fit mb-8 rounded-full bg-[#d2ff1fc4] shadow-[-20px_-20px_60px_32px_rgba(210,_255,_31,_1)]">
-              Hi
-            </h2>
-            <p className="text-lg font-normal py-2 mb-4">
-              Praesent hendrerit at mauris at cursus. Morbi sodales nunc
-              molestie magna scelerisque, et mattis mi hendrerit. Nunc eu augue
-              quis sem tempor pellentesque. Nam accumsan magna id facilisis
-              ultricies. Donec mattis sem urna, eget vehicula diam malesuada
-              nec.{" "}
+      <main className="mx-auto w-full grid grid-flow-row auto-rows-max gap-26 my-12">
+        <section className="flex flex-1 items-end w-full h-auto p-8 gap-6 bg-cover bg-center bg-no-repeat mx-auto max-w-400 md:flex-row md:max-h-100">
+          <div className=" basis-2/3 flex flex-col gap-8 w-2xl container text-pretty justify-center p-4 rounded-lg px-16 ">
+            <h2 className="text-6xl">Hello</h2>
+            <p className="text-lg tracking-wide font-normal py-2 w-xl text-foreground/80">
+              I work at the intersection of design, technology, and
+              communication. My strength lies in creating digital solutions that
+              not only look good, but also work effectively in practice.
             </p>
 
-            <Button variant="primary" href="/about">
-              About me
-            </Button>
+            <FancyButtonVar glowColor="#9cb0ff" textMode="dark" href="/about">
+              Get resume
+            </FancyButtonVar>
           </div>
+          <Image
+            className="w-1/2"
+            src="/images/grid.png"
+            alt=""
+            height={200}
+            width={200}
+          ></Image>
         </section>
 
-        <section id="projects" className="my-12">
+        <section id="projects" className="my-12 container mx-auto p-6">
           <section>
             <div className="h-80 flex flex-col justify-center">
-              <h1 className="text-6xl font-normal uppercase my-8">My Work</h1>
-              <p className="text-lg">Have a look at some of my work</p>
+              <h1 className="text-8xl font-normal uppercase my-8">
+                My <i>Work</i>
+              </h1>
+              <p className="text-lg"></p>
             </div>
           </section>
 

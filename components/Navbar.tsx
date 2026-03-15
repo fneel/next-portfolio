@@ -4,11 +4,11 @@ import NavbarItem from "./NavbarItem";
 
 export default function MainNav() {
   return (
-    <nav className="sticky h-15 top-0 left-0 z-50 w-full flex justify-center shadow-sm bg-mist-100">
-      <div className="flex container items-center my-2 justify-between">
-        <Link href="/" className="bg-[#D2FF1F] rounded-full">
+    <nav className="sticky h-15 top-0 left-0 z-50 w-full flex justify-center shadow-lg/5 bg-background/90">
+      <div className="flex mx-4 container items-center my-2 justify-between">
+        <Link href="/" className="bg-accent rounded-full p-1">
           <Image
-            className="h-12 w-auto"
+            className="h-8 w-auto"
             alt=""
             height={50}
             width={50}

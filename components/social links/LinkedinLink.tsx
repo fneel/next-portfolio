@@ -16,9 +16,9 @@ const LinkedinLink = () => {
         })
       }
       href="https://www.linkedin.com/in/elineurenius/"
-      className=""
+      className="hover:scale-95 hover:opacity-90"
     >
-      <Image src="/InBug-Black.png" height={40} width={40} alt=""></Image>
+      <Image src="/InBug-White.png" height={40} width={40} alt=""></Image>
     </a>
   );
 };

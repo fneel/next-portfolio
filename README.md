@@ -1,8 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next Portfolio
 
-## Getting Started
+A modern, responsive portfolio website built with Next.js, showcasing UX & Web Design projects. This project serves as a personal portfolio for Elin Eurenius, featuring an interactive design with project showcases, contact information, and a clean, professional layout.
 
-First, run the development server:
+## Features
+
+- **Responsive Design**: Optimized for desktop, tablet, and mobile devices using Tailwind CSS.
+- **Dynamic Project Showcase**: Displays projects with detailed information including roles, tools, wireframes, and images.
+- **Interactive Components**: Custom buttons, navigation, and gradient effects for an engaging user experience.
+- **SEO Optimized**: Built with Next.js for fast loading and search engine visibility.
+- **TypeScript Support**: Fully typed for better development experience and fewer bugs.
+- **Analytics Integration**: Includes Google Tag Manager support for tracking user interactions.
+- **Modular Components**: Reusable React components for easy maintenance and scalability.
+
+## Tech Stack
+
+- **Framework**: Next.js 16
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS 4
+- **Icons**: Lucide React
+- **Analytics**: @next/third-parties (Google Tag Manager)
+- **Linting**: ESLint
+- **Build Tool**: Next.js (with React 19)
+
+## Installation
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/fneel/next-portfolio.git
+   cd next-portfolio
+   ```
+
+2. **Install dependencies**:
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
+
+3. **Set up environment variables** (if needed):
+   - Copy `.env.example` to `.env.local` and fill in your values (e.g., for analytics).
+
+## Usage
+
+### Development
+
+Run the development server:
 
 ```bash
 npm run dev
@@ -10,27 +56,81 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the portfolio.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Build the application:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Start the production server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Linting
 
-## Deploy on Vercel
+Check for code quality issues:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run lint
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Project Structure
+
+```
+next-portfolio/
+├── app/                    # Next.js app directory
+│   ├── globals.css         # Global styles
+│   ├── layout.tsx          # Root layout
+│   ├── page.tsx            # Home page
+│   ├── about/              # About page
+│   ├── contact/            # Contact page
+│   └── projects/           # Dynamic project pages
+├── components/             # Reusable React components
+│   ├── buttons/            # Button components
+│   ├── social links/       # Social media links
+│   └── ...                 # Other components
+├── data/                   # Static data files
+│   ├── projects.json       # Project data
+│   └── projects.ts         # TypeScript types for projects
+├── public/                 # Static assets
+│   └── images/             # Images and project screenshots
+├── types/                  # TypeScript type definitions
+├── utils/                  # Utility functions
+└── lib/                    # Library configurations
+```
+
+## Adding Projects
+
+To add a new project:
+
+1. Add project data to `data/projects.json` with the required fields (id, title, myRole, etc.).
+2. Place project images in `public/images/projects/[project-id]/`.
+3. The project will automatically appear in the portfolio and have its own dynamic page at `/projects/[id]`.
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a feature branch: `git checkout -b feature/your-feature-name`.
+3. Commit your changes: `git commit -m 'Add some feature'`.
+4. Push to the branch: `git push origin feature/your-feature-name`.
+5. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+Elin Eurenius - [Your Contact Information]
+
+Project Link: [https://github.com/fneel/next-portfolio](https://github.com/fneel/next-portfolio)

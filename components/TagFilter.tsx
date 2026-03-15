@@ -10,9 +10,9 @@ export default function TagFilter({
   onSelectTag,
 }: TagFilterProps) {
   const baseStyle =
-    "text-sm border border-zinc-300 px-4 text-center py-1 rounded-full cursor-pointer [font-variant:all-small-caps] transition-all duration-200 hover:shadow-[0_0_15px_4px_rgba(210,_255,_31,_1)] active:scale-1";
+    "text-sm border border-zinc-300 px-4 text-center py-1 rounded-full cursor-pointer [font-variant:all-small-caps] transition-all duration-200 hover:shadow-[0_0_35px_-10px_rgba(156,_176,_255,_1)] active:scale-1";
   return (
-    <nav className="flex w-full gap-6 rounded-md shadow-md py-4 items-center px-4 my-8 mx-auto">
+    <nav className="flex w-full gap-6 rounded-md py-4 items-center px-4 my-8 mx-auto">
       <span className="">Filter view</span>
       <button
         className={`${baseStyle} ${

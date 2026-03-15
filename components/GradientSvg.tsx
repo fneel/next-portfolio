@@ -5,8 +5,8 @@ export default function GradientBackground({
 }) {
   return (
     <div
-      className={`${className}  inset-0 w-[400px] h-[400px]
-    bg-[radial-gradient(circle,_#D2FF1F_0%,_transparent_63%)]
+      className={`${className}  inset-0 w-[500px] h-[500px]
+    bg-[radial-gradient(circle,_#9cb0ff_0%,_transparent_63%)]
     blur-xl
     opacity-70`}
       {...props}
