@@ -17,7 +17,7 @@ export default function ProjectCard({
       <div
         className={`
           backdrop-blur-[15px]
-          bg-neutral-900/20
+          bg-accent-soft/2
          border-t border-accent/10
           hover:border-t-accent/30
           hover:scale-102

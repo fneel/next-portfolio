@@ -68,7 +68,7 @@ export default function Home() {
       </header>
 
       <main className="mx-auto w-full grid grid-flow-row auto-rows-max gap-26 my-12">
-        <section className="flex items-end w-full h-auto p-8 gap-6  bg-cover bg-center bg-no-repeat mx-auto max-w-400 ">
+        <section className="flex flex-1 items-end w-full h-auto p-8 gap-6 bg-cover bg-center bg-no-repeat mx-auto max-w-400 md:flex-row md:max-h-100">
           <div className=" basis-2/3 flex flex-col gap-8 w-2xl container text-pretty justify-center p-4 rounded-lg px-16 ">
             <h2 className="text-6xl">Hello</h2>
             <p className="text-lg tracking-wide font-normal py-2 w-xl text-foreground/80">
