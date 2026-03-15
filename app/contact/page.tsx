@@ -7,8 +7,8 @@ import LinkedinLink from "@/components/social links/LinkedinLink";
 
 export default function Contact() {
   return (
-    <div className="w-full flex flex-col items-center min-h-200">
-      <main className="container mb-16">
+    <div className="w-full flex flex-col items-center min-h-full">
+      <main className="container mb-16 py-20">
         <div className="flex flex-row container justify-between mx-auto">
           <section className="flex gap-12 justify-center flex-col p-6 ">
             <div>
@@ -18,7 +18,10 @@ export default function Contact() {
             <div className="flex flex-col gap-6 w-full">
               <div className="flex flex-row gap-4">
                 <Mail />
-                <a href="mailto:emailhej@mailadress.com">
+                <a
+                  href="mailto:emailhej@mailadress.com"
+                  className="hover:text-foreground/80"
+                >
                   elineurenius@gmail.com
                 </a>
               </div>
@@ -33,9 +36,9 @@ export default function Contact() {
               </div>
             </div>
           </section>
-          <section className="">
+          {/*  <section className="">
             <GradientBackground className=""></GradientBackground>
-          </section>
+          </section> */}
         </div>
       </main>
     </div>

@@ -2,13 +2,14 @@ import Link from "next/link";
 import Image from "next/image";
 import Button from "@/components/buttons/button";
 import FancyButton from "@/components/buttons/fancyButton";
+import FancyButtonVar from "@/components/buttons/fancyButtonVar";
 
 export default function About() {
   return (
     <div className="w-full flex flex-col items-center gap-20">
-      <header className="flex w-full pb-10 justify-center shadow">
+      <header className="flex w-full h-full my-8 justify-center shadow border-b border-accent/30">
         <div className="flex justify-between gap-10 container">
-          <section className="flex basis-4/10 flex-col gap-12 justify-end p-6 ">
+          <section className="flex basis-5/10 flex-col gap-12 justify-end p-6 ">
             <div>
               <h1 className="text-8xl uppercase">
                 <span className="text-4xl">about</span>
@@ -16,18 +17,21 @@ export default function About() {
               </h1>
             </div>
 
-            <FancyButton href="/contact">Connect</FancyButton>
+            <FancyButtonVar glowColor="#9cb0ff" textMode="dark" href="/contact">
+              Connect
+            </FancyButtonVar>
           </section>
 
           <Image
-            className="basis-6/10 p-6"
+            className="basis-5/10 object-contain max-h-150"
             alt=""
-            src="/images/e_b_2.jpeg"
-            width={300}
-            height={250}
+            src="/images/e-bl-2.png"
+            width={600}
+            height={900}
           ></Image>
         </div>
       </header>
+
       <main className="container mb-16">
         <section className="flex flex-col gap-10 w-xl p-6">
           <p className="leading-7">

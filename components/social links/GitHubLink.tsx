@@ -16,9 +16,9 @@ const GitHubLink = () => {
         })
       }
       href="https://github.com/fneel"
-      className=""
+      className="hover:scale-95 hover:opacity-90"
     >
-      <Image src="/GitHub_Black.png" height={40} width={40} alt=""></Image>
+      <Image src="/GitHub_White.png" height={40} width={40} alt=""></Image>
     </a>
   );
 };

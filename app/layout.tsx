@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Noto_Sans, League_Spartan } from "next/font/google";
+import { Noto_Sans, League_Spartan, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import MainNav from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -10,6 +10,16 @@ import { Suspense } from "react";
 
 const notoSans = Noto_Sans({
   variable: "--font-noto-sans",
+  subsets: ["latin"],
+});
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
@@ -26,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${notoSans.variable} justify-between flex flex-col min-h-screen bg-mist-100`}
+        className={`${notoSans.variable} justify-between flex flex-col min-h-screen`}
       >
         <MainNav />
         <main className="flex mx-auto w-full flex:1">{children}</main>

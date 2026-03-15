@@ -5,12 +5,14 @@ interface FancyButtonVarProps {
   href?: string;
   children?: ReactNode;
   glowColor?: string;
+  textMode?: "dark" | "light";
 }
 
 export default function FancyButtonVar({
   href = "/",
   children,
   glowColor = "#d2ff1f",
+  textMode = "light",
 }: FancyButtonVarProps) {
   const glowStyle = {
     background: glowColor,
@@ -21,6 +23,11 @@ export default function FancyButtonVar({
       0 0 60px ${glowColor}
     `,
   };
+
+  const textColorClass =
+    textMode === "dark"
+      ? "text-white group-hover:text-black"
+      : "text-black group-hover:text-white";
 
   return (
     <div className="relative w-[160px] h-[50px] flex justify-center items-center group">
@@ -57,13 +64,13 @@ export default function FancyButtonVar({
       {/* Main link */}
       <Link
         href={href}
-        className="
+        className={`
           absolute inset-0
           flex items-center justify-center
           rounded-[30px]
           px-2
-          text-black
           tracking-[1px]
+          font-normal
           backdrop-blur-[15px]
           bg-white/5
           border-t border-white/10
@@ -72,6 +79,7 @@ export default function FancyButtonVar({
           overflow-hidden
           transition-all duration-500
           group-hover:tracking-[3px]
+          ${textColorClass}
 
           before:content-['']
           before:absolute
@@ -86,7 +94,7 @@ export default function FancyButtonVar({
           before:transition-all
           before:duration-500
           group-hover:before:translate-x-[200px]
-        "
+        `}
       >
         {children}
       </Link>

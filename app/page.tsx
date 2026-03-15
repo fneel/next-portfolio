@@ -25,15 +25,19 @@ export default function Home() {
             </div>
 
             <div className="py-6 mb-4 mt-12">
-              <FancyButtonVar glowColor="#d2ff1f" href="/contact">
+              <FancyButtonVar
+                glowColor="#9cb0ff"
+                textMode="dark"
+                href="/contact"
+              >
                 Connect
               </FancyButtonVar>
             </div>
           </section>
 
-          <div
+          {/* <div
             className="basis-2/5 max-h-200 rounded-4xl backdrop-blur-[15px]
-          bg-white/5
+          bg-black/5
           border-t border-white/10
           
           shadow-[0_15px_15px_rgba(0,0,0,0.3)]
@@ -48,6 +52,16 @@ export default function Home() {
               width={300}
               height={300}
             ></Image>
+          </div> */}
+
+          <div className="basis-2/5 max-h-200 p-6">
+            <Image
+              className="object-center object-cover w-full h-full md:p-8"
+              alt=""
+              src="/images/e-c-blue.png"
+              width={800}
+              height={1200}
+            ></Image>
           </div>
         </div>
       </header>
@@ -56,18 +70,16 @@ export default function Home() {
         <section className="flex container items-end  w-full h-auto gap-6 ">
           <div className="basis-1/2 m-4 flex justify-center">
             <Image
-              className="h-100 w-auto object-cover rounded-xl"
-              src="/images/e3.jpg"
+              className="h-100 w-auto object-cover "
+              src="/images/e-st-blue.png"
               alt=""
-              height={200}
-              width={200}
+              height={800}
+              width={600}
             ></Image>
           </div>
 
           <div className=" basis-1/2 flex flex-col gap-8 w-2xl container text-pretty justify-center p-4 rounded-lg ">
-            <h2 className="text-6xl w-fit mb-8 rounded-full bg-[#d2ff1fc4] shadow-[-20px_-20px_60px_32px_rgba(210,_255,_31,_1)]">
-              Hi
-            </h2>
+            <h2 className="text-6xl">Hi</h2>
             <p className="text-lg font-normal py-2">
               Praesent hendrerit at mauris at cursus. Morbi sodales nunc
               molestie magna scelerisque, et mattis mi hendrerit. Nunc eu augue
@@ -76,9 +88,9 @@ export default function Home() {
               nec.{" "}
             </p>
 
-            <Button variant="primary" href="/about">
+            <FancyButtonVar glowColor="#9cb0ff" textMode="dark" href="/about">
               About me
-            </Button>
+            </FancyButtonVar>
           </div>
         </section>
 
