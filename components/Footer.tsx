@@ -9,7 +9,7 @@ export default function Footer() {
     <footer className="h-50 w-full rounded-2xl py-6 flex border-2 border-neutral-950/80">
       <div className="container grid grid-cols-5 w-full mx-auto py-4 text-neutral-600 text-sm">
         <section className="flex flex-col gap-4 ">
-          <div className="bg-[#d2ff1f] w-12 h-12 rounded-full p-2 flex">
+          <div className="bg-accent w-12 h-12 rounded-full p-2 flex">
             <Image src="/el-in.png" alt="" height={50} width={50}></Image>
           </div>
           <p className="text-sm text-neutral-600 text-pretty">

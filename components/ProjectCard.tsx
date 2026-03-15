@@ -21,18 +21,18 @@ export default function ProjectCard({
          border-t border-accent/10
           hover:border-t-accent/30
           hover:scale-102
-          
+          w-full
           shadow-[0_15px_15px_rgba(0,0,0,0.1)] 
           flex 
           items-center 
-          gap-6 w-full container mx-auto justify-center h-xl rounded-xl p-6 
+          gap-6 container mx-auto justify-center h-xl rounded-xl p-6 
           hover:shadow-[0_15px_15px_rgba(0,0,0,0.2)] transition-all duration-100 cursor-pointer
           ${reversed ? "flex-row-reverse" : "flex-row"}
         `}
       >
-        <div className="px-4 basis-1/2 gap-8 flex flex-col">
+        <div className="px-4 basis-1/2 gap-8 flex flex-col text-foreground">
           <div className="flex flex-wrap gap-2 top-0  self-start">
-            <p className="[font-variant:all-small-caps] text-neutral-400 text-sm ">
+            <p className="[font-variant:all-small-caps] text-foreground/50 text-sm ">
               {project.tags.join(" | ")}
             </p>
           </div>
@@ -41,9 +41,9 @@ export default function ProjectCard({
               {project.title}
             </h2>
 
-            <p className="text-sm text-gray-500 mb-4">{project.myRole}</p>
+            <p className="text-sm text-foreground/30 mb-4">{project.myRole}</p>
 
-            <p className="text-gray-700 line-clamp-3 my-2 w-md">
+            <p className="font-normal text-foreground/80 line-clamp-3 my-2 w-md tracking-wide">
               {project.projectConcept}
             </p>
           </div>
@@ -58,7 +58,7 @@ export default function ProjectCard({
           <Image
             className="shadow-[0px_0px_22px_-5px_rgba(0,_0,_0,_0.1)] basis-1/2 rounded-lg object-cover max-h-100"
             alt={project.title}
-            src={project.coverImage || "/ph-cover.png"}
+            src={project.coverImage || "/ph-img.png"}
             width={600}
             height={400}
           />

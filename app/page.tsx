@@ -17,10 +17,11 @@ export default function Home() {
             <div>
               <h1 className="text-8xl uppercase">
                 <span className="text-xl">
-                  portfolio:
-                  <b> elin eurenius</b>
+                  <b>portfolio:</b>
+
+                  <i> elin eurenius</i>
                 </span>
-                <br></br> ux & web designer
+                <br></br>ux & web designer
               </h1>
             </div>
 
@@ -66,9 +67,16 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="mx-auto container px-6 grid grid-flow-row auto-rows-max gap-26 my-12">
-        <section className="flex container items-end  w-full h-auto gap-6 ">
-          <div className="basis-1/2 m-4 flex justify-center">
+      <main className="mx-auto w-full grid grid-flow-row auto-rows-max gap-26 my-12">
+        <section className="flex  items-end w-full h-auto p-8 gap-6 bg-[url(/images/e-eyes-w-gra.png)] bg-cover bg-center bg-no-repeat mx-auto max-w-400 ">
+          {/* <Image
+            src="/images/e-eyes.png"
+            height={400}
+            width={2400}
+            alt=""
+            className="object-cover"
+          ></Image> */}
+          {/* <div className="basis-1/3 m-4 flex justify-center">
             <Image
               className="h-100 w-auto object-cover "
               src="/images/e-st-blue.png"
@@ -76,16 +84,15 @@ export default function Home() {
               height={800}
               width={600}
             ></Image>
-          </div>
+          </div> */}
 
-          <div className=" basis-1/2 flex flex-col gap-8 w-2xl container text-pretty justify-center p-4 rounded-lg ">
-            <h2 className="text-6xl">Hi</h2>
-            <p className="text-lg font-normal py-2">
-              Praesent hendrerit at mauris at cursus. Morbi sodales nunc
-              molestie magna scelerisque, et mattis mi hendrerit. Nunc eu augue
-              quis sem tempor pellentesque. Nam accumsan magna id facilisis
-              ultricies. Donec mattis sem urna, eget vehicula diam malesuada
-              nec.{" "}
+          <div className=" basis-2/3 flex flex-col gap-8 w-2xl container text-pretty justify-center p-4 rounded-lg px-16 ">
+            <h2 className="text-6xl">Hello</h2>
+            <p className="text-lg tracking-wide font-normal py-2 w-xl text-foreground/80">
+              Jag arbetar i gränslandet mellan design, teknik och kommunikation.
+              Min styrka ligger i att skapa digitala lösningar som inte bara ser
+              bra ut, utan också fungerar i praktiken - för användare, företag
+              och organisationer.
             </p>
 
             <FancyButtonVar glowColor="#9cb0ff" textMode="dark" href="/about">
@@ -94,11 +101,13 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="projects" className="my-12">
+        <section id="projects" className="my-12 container mx-auto p-6">
           <section>
             <div className="h-80 flex flex-col justify-center">
-              <h1 className="text-6xl font-normal uppercase my-8">My Work</h1>
-              <p className="text-lg">Have a look at some of my work</p>
+              <h1 className="text-8xl font-normal uppercase my-8">
+                My <i>Work</i>
+              </h1>
+              <p className="text-lg"></p>
             </div>
           </section>
 

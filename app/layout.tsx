@@ -8,6 +8,8 @@ import { GoogleTagManager } from "@next/third-parties/google";
 import Analytics from "@/components/Analytics";
 import { Suspense } from "react";
 
+const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
+
 const notoSans = Noto_Sans({
   variable: "--font-noto-sans",
   subsets: ["latin"],
@@ -38,10 +40,14 @@ export default function RootLayout({
       <body
         className={`${notoSans.variable} justify-between flex flex-col min-h-screen`}
       >
+        <GoogleTagManager
+          gtmId={gtmId}
+          gtmScriptUrl="https://www.googletagmanager.com/gtm.js"
+        />
         <MainNav />
         <main className="flex mx-auto w-full flex:1">{children}</main>
         <Footer />
-        <GoogleTagManager gtmId="GTM-NMLBWBTQ" />
+
         <Suspense>
           <Analytics />
         </Suspense>

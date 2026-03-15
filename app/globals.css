@@ -5,12 +5,14 @@
   --background: #0e0c0d;
   --foreground: #dad8e4;
   --accent: #9cb0ff;
+  --accentsoft: #b1bef0;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-accent: var(--accent);
+  --color-accent-soft: var(--accentsoft);
   --font-sans: var(--font-noto-sans);
 }
 
