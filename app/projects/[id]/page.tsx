@@ -33,11 +33,11 @@ export default async function ProjectPage({ params }: PageProps) {
         <div className="flex items-center content-between p-4">
           <div className=" flex flex-col items-start justify-center space-y-16 h-full mx-auto">
             <div>
-              <p className="[font-variant:all-small-caps] text-neutral-400 text-sm ">
+              <p className="[font-variant:all-small-caps] text-foreground/50 text-sm ">
                 {project.tags.join(" | ")}
               </p>
-              <h1 className="uppercase text-6xl font-normal mb-4">
-                <span className="text-neutral-400 text-6xl">project</span>{" "}
+              <h1 className="uppercase text-6xl font-normal mb-4 max-w-8/10">
+                <span className="text-accent/60 text-6xl">project</span>{" "}
                 <br></br>
                 {project.title}
               </h1>
@@ -45,7 +45,7 @@ export default async function ProjectPage({ params }: PageProps) {
                 <p className="text-2xl font-normal">{project.subTitle}</p>
               )}
             </div>
-            <p className="text-neutral-400">My role: {project.myRole}</p>
+            <p className="text-foreground/60">Role: {project.myRole}</p>
           </div>
           <div className=" p-4 mx-auto align-self-center">
             <Image
@@ -60,13 +60,13 @@ export default async function ProjectPage({ params }: PageProps) {
       </header>
 
       <main className="mx-auto container my-16 py-16">
-        <section className="mx-auto space-y-12 grid gap-16 text-gray-700">
+        <section className="mx-auto space-y-12 grid gap-16 text-foreground">
           {project.projectConcept && (
             <div className="grid gap-8 border-l-2 px-4">
-              <h2 className="lg:max-w-1/4 text-5xl font-semibold lowercase py-2">
+              <h2 className="lg:max-w-1/4 text-5xl  lowercase py-2">
                 Project concept
               </h2>
-              <p className=" columns-1 md:columns-2 lg:columns-3 gap-8 leading-relaxed">
+              <p className="leading-relaxed text-pretty max-w-160">
                 {project.projectConcept}
               </p>
             </div>
@@ -74,10 +74,10 @@ export default async function ProjectPage({ params }: PageProps) {
 
           {project.backstoryProblem && (
             <div className="grid gap-8 border-l-2 px-4">
-              <h2 className="lg:max-w-1/4 text-5xl font-semibold lowercase py-2">
+              <h2 className="lg:max-w-1/4 text-5xl  lowercase py-2">
                 backstory & problem
               </h2>
-              <p className="max-w-1/2 leading-relaxed">
+              <p className="text-pretty max-w-160 leading-relaxed">
                 {project.backstoryProblem}
               </p>
             </div>
@@ -86,10 +86,12 @@ export default async function ProjectPage({ params }: PageProps) {
           {project.currentSolution && (
             <div className="grid gap-8">
               <div className="grid gap-8 border-l-2 px-4">
-                <h2 className="lg:max-w-1/4 text-5xl font-semibold lowercase py-2">
+                <h2 className="lg:max-w-1/4 text-5xl lowercase py-2">
                   current Solution
                 </h2>
-                <p>{project.currentSolution}</p>
+                <p className="text-pretty max-w-160 leading-relaxed">
+                  {project.currentSolution}
+                </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-1 md:gap-6 items-center">
@@ -107,36 +109,12 @@ export default async function ProjectPage({ params }: PageProps) {
             </div>
           )}
 
-          {project.wireframesSketches && (
-            <div className="grid gap-8">
-              <div className="grid gap-8 border-l-2 px-4">
-                <h2 className="lg:max-w-1/2 text-5xl font-semibold lowercase py-2">
-                  wireframes & sketches
-                </h2>
-                <p>{project.wireframesSketches}</p>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-1 md:gap-6 items-center">
-                {project.wireframesSketchesImages?.map((img, i) => (
-                  <Image
-                    key={i}
-                    src={img.src}
-                    alt={img.alt || ""}
-                    width={800}
-                    height={600}
-                    className="rounded-md object-cover"
-                  />
-                ))}
-              </div>
-            </div>
-          )}
-
           {project.requirements && (
             <div className="grid gap-8 border-l-2 px-4">
-              <h2 className="lg:max-w-1/4 text-5xl font-semibold lowercase py-2">
+              <h2 className="lg:max-w-1/4 text-5xl lowercase py-2">
                 requirements
               </h2>
-              <p className="max-w-1/2 leading-relaxed">
+              <p className="text-pretty max-w-160 leading-relaxed">
                 {project.requirements}
               </p>
             </div>
@@ -144,31 +122,59 @@ export default async function ProjectPage({ params }: PageProps) {
 
           {project.toolsEnvironments && (
             <div className="grid gap-8 border-l-2 px-4">
-              <h2 className="lg:max-w-1/4 text-5xl font-semibold lowercase py-2">
+              <h2 className="lg:max-w-1/4 text-5xl lowercase py-2">
                 tools & environments
               </h2>
-              <p className="max-w-1/2 leading-relaxed">
+              <p className="text-pretty max-w-160 leading-relaxed">
                 {project.toolsEnvironments}
               </p>
             </div>
           )}
 
+          {project.wireframesSketches && (
+            <div className="grid gap-8">
+              <div className="grid gap-8 border-l-2 px-4">
+                <h2 className="lg:max-w-1/2 text-5xl lowercase py-2">
+                  wireframes & sketches
+                </h2>
+                <p>{project.wireframesSketches}</p>
+              </div>
+
+              <div className="grid grid-cols-1 md:max-h-200 md:grid-cols-2 xl:grid-cols-3 gap-1 md:gap-6 items-center">
+                {project.wireframesSketchesImages?.map((img, i) => (
+                  <Image
+                    key={i}
+                    src={img.src}
+                    alt={img.alt || ""}
+                    width={800}
+                    height={600}
+                    className="rounded-md object-contain max-h-200"
+                  />
+                ))}
+              </div>
+            </div>
+          )}
+
           {project.challenges && (
             <div className="grid gap-8 border-l-2 px-4">
-              <h2 className="lg:max-w-1/4 text-5xl font-semibold lowercase py-2">
+              <h2 className="lg:max-w-1/4 text-5xl  lowercase py-2">
                 challenges
               </h2>
-              <p className="max-w-1/2 leading-relaxed">{project.challenges}</p>
+              <p className="text-pretty max-w-160 leading-relaxed">
+                {project.challenges}
+              </p>
             </div>
           )}
 
           {project.resultsImages && (
             <div className="grid gap-8">
               <div className="grid gap-8 border-l-2 px-4">
-                <h2 className="lg:max-w-1/2 text-5xl font-semibold lowercase py-2">
+                <h2 className="lg:max-w-1/2 text-5xl  lowercase py-2">
                   results
                 </h2>
-                <p>{project.results}</p>
+                <p className="leading-relaxed text-pretty max-w-160">
+                  {project.results}
+                </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-1 md:gap-6 items-center">
@@ -188,10 +194,13 @@ export default async function ProjectPage({ params }: PageProps) {
 
           {project.reflections && (
             <div className="grid gap-8 border-l-2 px-4">
-              <h2 className="lg:max-w-1/4 text-5xl font-semibold lowercase py-2">
+              <h2 className="lg:max-w-1/4 text-5xl lowercase py-2">
+                {" "}
                 Reflections
               </h2>
-              <p className="max-w-1/2 leading-relaxed">{project.reflections}</p>
+              <p className="text-pretty max-w-160 leading-relaxed">
+                {project.reflections}
+              </p>
             </div>
           )}
         </section>

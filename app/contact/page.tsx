@@ -12,7 +12,7 @@ export default function Contact() {
         <div className="flex flex-row container justify-between mx-auto">
           <section className="flex gap-12 justify-center flex-col p-6 ">
             <div>
-              <h1 className="text-8xl uppercase">contact</h1>
+              <h1 className="text-8xl uppercase">connect</h1>
             </div>
 
             <div className="flex flex-col gap-6 w-full">

@@ -1,35 +1,31 @@
 [
   {
     "id": "ai-coach",
-    "title": "AI-Coach",
-    "myRole": "Product Designer & Developer",
-    "subTitle": "An amazing AI-solution to a difficult problem",
-    "projectConcept": "Der er mange tilgængelige udgaver af Lorem Ipsum, men de fleste udgaver har gennemgået forandringer, når nogen har tilføjet humor eller tilfældige ord, som på ingen måde ser ægte ud. Hvis du skal bruge en udgave af Lorem Ipsum, skal du sikre dig, at der ikke indgår noget pinligt midt i teksten. Alle Lorem Ipsum-generatore på nettet har en tendens til kun at dublere små brudstykker af Lorem Ipsum efter behov, hvilket gør dette til den første ægte generator på internettet. Den bruger en ordbog på over 200 ord på latin kombineret med en håndfuld sætningsstrukturer til at generere sætninger, som ser pålidelige ud. Resultatet af Lorem Ipsum er derfor altid fri for gentagelser, tilføjet humor eller utroværdige ord osv.",
+    "title": "DigitalWell Ventures new website",
+    "myRole": "Designer & Developer",
+    "subTitle": "Website building from scratch",
+    "projectConcept": "Der er mange tilgængelige udgaver af Lorem Ipsum, men de fleste udgaver har gennemgået forandringer, når nogen har tilføjet humor eller tilfældige ord, som på ingen måde ser ægte ud. Hvis du skal bruge en udgave af Lorem Ipsum, skal du sikre dig, at der ikke indgår noget pinligt midt i teksten. Alle Lorem Ipsum-generatore på nettet har en tendens til kun at dublere små brudstykker af Lorem Ipsum efter behov, hvilket gør dette til den første ægte generator på internettet.",
     "backstoryProblem": "Standardafsnittet af Lorem Ipsum, som er brugt siden 1500-tallet, er gengivet nedenfor for de, der er interesserede. Afsnittene 1.10.32 og 1.10.33 fra de Finibus Bonorum et Malorum af Cicero er også gengivet i deres nøjagtige udgave i selskab med den engelske udgave fra oversættelsen af H. Rackham fra 1914.",
-    "requirements": "Generate documents, provide regulatory guidance, suggest certifications.",
-    "toolsEnvironments": "Next.js, TypeScript, Tailwind, OpenAI API",
-    "currentSolution": "Interactive AI assistant with guided document generation.",
+    "requirements": "Use Squarespace, use Airtable for handling data, create graphic elements, create and edit media to use on the website, newsletter subscriptions",
+    "toolsEnvironments": "Squarespace as website builder, Airtable as CMS and database, Figma for design and wireframes, Canva for graphic elements, Photoshop for editing images",
+    "currentSolution": "Website built with WordPress. Not much content and most pages are outdated yet the style is fine.",
     "currentSolutionImages": [
       {
-        "src": "/projects/project-1/Landingpage.png",
+        "src": "/projects/project-1/old-landing.png",
         "alt": "DWV landingpage"
       },
       {
-        "src": "/projects/project-1/what-we-offer.png"
+        "src": "/projects/project-1/old-page.png"
+      },
+      {
+        "src": "/projects/project-1/old-cta.png",
+        "alt": "DWV landingpage"
       }
     ],
     "wireframesSketches": "Low-fidelity Figma wireframes focusing on onboarding and dashboard.",
     "wireframesSketchesImages": [
       {
-        "src": "/projects/project-1/Landingpage.png",
-        "alt": "DWV landingpage"
-      },
-      {
-        "src": "/projects/project-1/what-we-offer.png",
-        "alt": "displaying the company offers"
-      },
-      {
-        "src": "/projects/project-1/what-we-offer.png",
+        "src": "/projects/project-1/wireframe2.png",
         "alt": "displaying the company offers"
       }
     ],
@@ -45,11 +41,15 @@
         "alt": "displaying the company offers"
       },
       {
-        "src": "/projects/project-1/what-we-offer.png",
+        "src": "/projects/project-1/co-create.png",
+        "alt": "displaying the company offers"
+      },
+      {
+        "src": "/projects/project-1/about-our.png",
         "alt": "displaying the company offers"
       }
     ],
-    "reflections": "I modsætning til hvad mange tror, er Lorem Ipsum ikke bare tilfældig tekst. Det stammer fra et stykke litteratur på latin fra år 45 f.kr., hvilket gør teksten over 2000 år gammel. Richard McClintock, professor i latin fra Hampden-Sydney universitet i Virginia, undersøgte et af de mindst kendte ord consectetur fra en del af Lorem Ipsum, og fandt frem til dets oprindelse ved at studere brugen gennem klassisk litteratur. Lorem Ipsum stammer fra afsnittene 1.10.32 og 1.10.33 fra de Finibus Bonorum et Malorum (Det gode og ondes ekstremer), som er skrevet af Cicero i år 45 f.kr. Bogen, som var meget populær i renæssancen, er en afhandling om etik. Den første linie af Lorem Ipsum Lorem ipsum dolor sit amet... kommer fra en linje i afsnit 1.10.32.",
+    "reflections": "I modsætning til hvad mange tror, er Lorem Ipsum ikke bare tilfældig tekst. Det stammer fra et stykke litteratur på latin fra år 45 f.kr., hvilket gør teksten over 2000 år gammel. Richard McClintock, professor i latin fra Hampden-Sydney universitet i Virginia, undersøgte et af de mindst kendte ord consectetur fra en del af Lorem Ipsum, og fandt frem til dets oprindelse ved at studere brugen gennem klassisk litteratur. ",
 
     "tags": ["UX", "Design", "Frontend"],
     "coverImage": "/projects/project-1/Landingpage.png"

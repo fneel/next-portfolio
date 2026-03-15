@@ -13,7 +13,7 @@ export default function Home() {
     <div className="w-full grid grid-flow-row auto-rows-max gap-36" id="home">
       <header className="w-full flex justify-center h-full py-20">
         <div className="flex gap-10 justify-between container md:w-full sm:w-full">
-          <section className="flex basis-3/5 flex-col justify-end p-6 ">
+          <section className="flex basis-1/2 flex-col justify-end p-6 ">
             <div>
               <h1 className="text-8xl uppercase">
                 <span className="text-xl">
@@ -29,9 +29,9 @@ export default function Home() {
               <FancyButtonVar
                 glowColor="#9cb0ff"
                 textMode="dark"
-                href="/contact"
+                href="#projects"
               >
-                Connect
+                My work
               </FancyButtonVar>
             </div>
           </section>
@@ -55,11 +55,11 @@ export default function Home() {
             ></Image>
           </div> */}
 
-          <div className="basis-2/5 max-h-200 p-6">
+          <div className="basis-1/2 max-h-200 p-6">
             <Image
               className="object-center object-cover w-full h-full md:p-8"
               alt=""
-              src="/images/e-c-blue.png"
+              src="/images/grid-h.png"
               width={800}
               height={1200}
             ></Image>
@@ -68,37 +68,26 @@ export default function Home() {
       </header>
 
       <main className="mx-auto w-full grid grid-flow-row auto-rows-max gap-26 my-12">
-        <section className="flex  items-end w-full h-auto p-8 gap-6 bg-[url(/images/e-eyes-w-gra.png)] bg-cover bg-center bg-no-repeat mx-auto max-w-400 ">
-          {/* <Image
-            src="/images/e-eyes.png"
-            height={400}
-            width={2400}
-            alt=""
-            className="object-cover"
-          ></Image> */}
-          {/* <div className="basis-1/3 m-4 flex justify-center">
-            <Image
-              className="h-100 w-auto object-cover "
-              src="/images/e-st-blue.png"
-              alt=""
-              height={800}
-              width={600}
-            ></Image>
-          </div> */}
-
+        <section className="flex items-end w-full h-auto p-8 gap-6  bg-cover bg-center bg-no-repeat mx-auto max-w-400 ">
           <div className=" basis-2/3 flex flex-col gap-8 w-2xl container text-pretty justify-center p-4 rounded-lg px-16 ">
             <h2 className="text-6xl">Hello</h2>
             <p className="text-lg tracking-wide font-normal py-2 w-xl text-foreground/80">
-              Jag arbetar i gränslandet mellan design, teknik och kommunikation.
-              Min styrka ligger i att skapa digitala lösningar som inte bara ser
-              bra ut, utan också fungerar i praktiken - för användare, företag
-              och organisationer.
+              I work at the intersection of design, technology, and
+              communication. My strength lies in creating digital solutions that
+              not only look good, but also work effectively in practice.
             </p>
 
             <FancyButtonVar glowColor="#9cb0ff" textMode="dark" href="/about">
-              About me
+              Get resume
             </FancyButtonVar>
           </div>
+          <Image
+            className="w-1/2"
+            src="/images/grid.png"
+            alt=""
+            height={200}
+            width={200}
+          ></Image>
         </section>
 
         <section id="projects" className="my-12 container mx-auto p-6">

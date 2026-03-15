@@ -12,7 +12,9 @@ export default function About() {
           <section className="flex basis-5/10 flex-col gap-12 justify-end p-6 ">
             <div>
               <h1 className="text-8xl uppercase">
-                <span className="text-4xl">about</span>
+                <span className="text-4xl">
+                  <i>about</i>
+                </span>
                 <br></br> elin eurenius
               </h1>
             </div>
@@ -74,7 +76,9 @@ export default function About() {
             <div className="flex w-full flex-col items-center justify-center gap-6 p-6 lg:flex-row lg:gap-0">
               <div className="relative flex  w-fit items-center sm:text-left lg:text-right lg:justify-end">
                 <div className=" lg:pr-6 ">
-                  <h2 className="text-6xl ">What I do</h2>
+                  <h2 className="text-6xl ">
+                    <i>What</i> I do
+                  </h2>
                 </div>
                 <div className="top-1/2 mt-px hidden h-px w-16 bg-accent lg:block"></div>
               </div>
@@ -244,7 +248,7 @@ export default function About() {
           </section>
 
           <section>
-            <h2 className="text-5xl">Skills</h2>
+            <h2 className="text-5xl"></h2>
           </section>
         </section>
       </main>
