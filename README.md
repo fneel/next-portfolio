@@ -1,6 +1,6 @@
 # Next Portfolio
 
-A modern, responsive portfolio website built with Next.js, showcasing UX & Web Design projects. This project serves as a personal portfolio for Elin Eurenius, featuring an interactive design with project showcases, contact information, and a clean, professional layout.
+A portfolio website built with Next.js, showcasing UX & Web Design projects. This project serves as a personal portfolio, featuring an interactive design with project showcases, contact information, and a clean layout.
 
 ## Features
 
@@ -42,9 +42,8 @@ A modern, responsive portfolio website built with Next.js, showcasing UX & Web D
    ```
 
 3. **Set up environment variables** (if needed):
-   - Copy `.env.example` to `.env.local` and fill in your values (e.g., for analytics).
+   - Add `.env.example` to `.env.local` and fill in your values (for analytics).
 
-## Usage
 
 ### Development
 
@@ -66,20 +65,6 @@ Build the application:
 
 ```bash
 npm run build
-```
-
-Start the production server:
-
-```bash
-npm start
-```
-
-### Linting
-
-Check for code quality issues:
-
-```bash
-npm run lint
 ```
 
 ## Project Structure
@@ -115,22 +100,10 @@ To add a new project:
 2. Place project images in `public/images/projects/[project-id]/`.
 3. The project will automatically appear in the portfolio and have its own dynamic page at `/projects/[id]`.
 
-## Contributing
 
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository.
-2. Create a feature branch: `git checkout -b feature/your-feature-name`.
-3. Commit your changes: `git commit -m 'Add some feature'`.
-4. Push to the branch: `git push origin feature/your-feature-name`.
-5. Open a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
-Elin Eurenius - [Your Contact Information]
+Elin Eurenius - <a href="https://www.linkedin.com/in/elineurenius/">Linkedin</a>
 
 Project Link: [https://github.com/fneel/next-portfolio](https://github.com/fneel/next-portfolio)
